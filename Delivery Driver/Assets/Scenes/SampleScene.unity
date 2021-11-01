@@ -791,9 +791,9 @@ GameObject:
   - component: {fileID: 1459101720}
   - component: {fileID: 1459101719}
   - component: {fileID: 1459101721}
-  - component: {fileID: 1459101723}
   - component: {fileID: 1459101722}
   - component: {fileID: 1459101724}
+  - component: {fileID: 1459101723}
   m_Layer: 0
   m_Name: Driver
   m_TagString: Untagged
@@ -901,8 +901,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &1459101723
-CapsuleCollider2D:
+--- !u!61 &1459101723
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -915,8 +915,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.74, y: 3.27}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.74, y: 3.27}
+  m_EdgeRadius: 0
 --- !u!114 &1459101724
 MonoBehaviour:
   m_ObjectHideFlags: 0
