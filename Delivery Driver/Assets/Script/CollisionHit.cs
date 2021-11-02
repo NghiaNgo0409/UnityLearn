@@ -11,6 +11,9 @@ public class CollisionHit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        Debug.Log("I passed something!");    
+        if(other.tag == "Package")
+        {
+            Debug.Log("Package picked up!");
+        }    
     }
 }
