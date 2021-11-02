@@ -14,6 +14,10 @@ public class CollisionHit : MonoBehaviour
         if(other.tag == "Package")
         {
             Debug.Log("Package picked up!");
+        }
+        if(other.tag == "Customer")
+        {
+            Debug.Log("Package is delivered to customer!");
         }    
     }
 }
