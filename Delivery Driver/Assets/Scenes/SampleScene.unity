@@ -14842,10 +14842,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasPackageColor:
     serializedVersion: 2
-    rgba: 32177920
+    rgba: 4278228479
   noPackageColor:
     serializedVersion: 2
-    rgba: 33554431
+    rgba: 4294967295
 --- !u!1 &1461662446
 GameObject:
   m_ObjectHideFlags: 0
