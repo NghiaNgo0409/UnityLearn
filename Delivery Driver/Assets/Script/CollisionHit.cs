@@ -6,6 +6,7 @@ public class CollisionHit : MonoBehaviour
 {
 
     bool hasPackage;
+    float destroyDelay = 0.5f;
     private void OnCollisionEnter2D(Collision2D other) 
     {
         Debug.Log("Hit!");   
@@ -13,10 +14,11 @@ public class CollisionHit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.tag == "Package")
+        if(other.tag == "Package" && !hasPackage)
         {
             Debug.Log("Package picked up!");
             hasPackage = true;
+            Destroy(other.gameObject, destroyDelay);
         }
         if(other.tag == "Customer" && hasPackage)
         {
