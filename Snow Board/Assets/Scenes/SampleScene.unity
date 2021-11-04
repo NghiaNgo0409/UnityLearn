@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e31d684c301904f94018eddc4e870a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torqueAmount: 8
+  torqueAmount: 10
 --- !u!1 &367578301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,7 +1080,7 @@ SurfaceEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Speed: 10
+  m_Speed: 20
   m_SpeedVariation: 0
   m_ForceScale: 0.1
   m_UseContactForce: 0
