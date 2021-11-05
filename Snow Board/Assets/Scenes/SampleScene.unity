@@ -11094,3 +11094,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162b6a1480c94e049a0264834543e695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finishEffect: {fileID: 1049897356}
