@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd1350eb1564fe41a9b9d97f7457f31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crashEffect: {fileID: 542848214}
 --- !u!1 &367578301
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +669,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
