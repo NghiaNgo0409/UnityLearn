@@ -26,7 +26,14 @@ public class PlayerController : MonoBehaviour
 
     void Boostup()
     {
-        
+        if(Input.GetKey(KeyCode.UpArrow))
+        {
+            surface2D.speed = boostSpeed;
+        }
+        else
+        {
+            surface2D.speed = baseSpeed;
+        }
     }
 
     void RotatePlayer()
