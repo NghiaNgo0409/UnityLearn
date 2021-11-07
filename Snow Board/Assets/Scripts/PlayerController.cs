@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         RotatePlayer();
+        Boostup();
+    }
+
+    void Boostup()
+    {
+        
     }
 
     void RotatePlayer()
