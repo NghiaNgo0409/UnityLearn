@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class DustTrails : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] ParticleSystem dustParticles;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
