@@ -15,6 +15,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RotatePlayer();
+    }
+
+    void RotatePlayer()
+    {
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             rb.AddTorque(torqueAmount);
