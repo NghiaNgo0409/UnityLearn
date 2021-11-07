@@ -6,11 +6,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
+    SurfaceEffector2D surface2D;
     [SerializeField] float torqueAmount = 10f;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        surface2D = FindObjectOfType<SurfaceEffector2D>();
     }
 
     // Update is called once per frame
