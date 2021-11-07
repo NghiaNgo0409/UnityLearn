@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     SurfaceEffector2D surface2D;
     [SerializeField] float torqueAmount = 10f;
+    [SerializeField] float boostSpeed = 30f;
+    [SerializeField] float baseSpeed = 20f;
     // Start is called before the first frame update
     void Start()
     {
