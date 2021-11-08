@@ -21,8 +21,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RotatePlayer();
-        Boostup();
+        if(canMove)
+        {
+            RotatePlayer();
+            Boostup();
+        }
     }
 
     void Boostup()
