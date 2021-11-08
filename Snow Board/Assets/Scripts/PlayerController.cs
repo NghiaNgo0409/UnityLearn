@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void DisableControls()
+    {
+        canMove = false;
+    }
+
     void Boostup()
     {
         if(Input.GetKey(KeyCode.UpArrow))
