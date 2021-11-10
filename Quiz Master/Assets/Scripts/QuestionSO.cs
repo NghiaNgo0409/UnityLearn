@@ -18,4 +18,9 @@ public class QuestionSO : ScriptableObject
     {
         return answer[index];
     }
+
+    public int GetCorrectAnswerIndex()
+    {
+        return correctAnswerIndex;
+    }
 }
