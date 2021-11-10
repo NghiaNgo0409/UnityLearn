@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class QuestionSO : ScriptableObject
 {
-
+    string question = "Text a question here";
 }
