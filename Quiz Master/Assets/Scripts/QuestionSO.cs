@@ -4,5 +4,10 @@ using UnityEngine;
 
 public class QuestionSO : ScriptableObject
 {
-    string question = "Text a question here";
+    [SerializeField]string question = "Text a question here";
+
+    public string GetQuestion()
+    {
+        return question;
+    }
 }
