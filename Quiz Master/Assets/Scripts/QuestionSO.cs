@@ -13,4 +13,9 @@ public class QuestionSO : ScriptableObject
     {
         return question;
     }
+
+    public string GetAnswer(int index)
+    {
+        return answer[index];
+    }
 }
