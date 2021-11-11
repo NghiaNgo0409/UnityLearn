@@ -1307,6 +1307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc22fea034cd6f844ba8d4cd1dc606da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questionText: {fileID: 958873208}
+  question: {fileID: 11400000, guid: 8a8dbdd48dcaa4d4d81f5dbbb6f7ec71, type: 2}
 --- !u!1 &2063699235
 GameObject:
   m_ObjectHideFlags: 0
