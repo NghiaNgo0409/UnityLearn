@@ -8,6 +8,9 @@ public class Quiz : MonoBehaviour
     [SerializeField] TextMeshProUGUI questionText;
     [SerializeField] QuestionSO question;
     [SerializeField] GameObject[] answerButtons;
+    int correctAnswerIndex;
+    [SerializeField] Sprite defaultButtonSprite;
+    [SerializeField] Sprite correctButtonSprite;
     // Start is called before the first frame update
     void Start()
     {
