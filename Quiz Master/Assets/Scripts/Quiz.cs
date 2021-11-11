@@ -15,7 +15,7 @@ public class Quiz : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        DisplayQuestion();
     }
 
     public void OnAnswerCorrected(int index)
