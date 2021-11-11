@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour
 {
@@ -25,6 +26,18 @@ public class Quiz : MonoBehaviour
 
     public void OnAnswerCorrected(int index)
     {
-
+        if(index == question.GetCorrectAnswerIndex())
+        {
+            questionText.text = "Correct answer!";
+            Image buttonImage = answerButtons[index].GetComponent<Image>();
+            buttonImage.sprite = correctButtonSprite;
+        }
+        else
+        {
+            correctAnswerIndex = question.GetCorrectAnswerIndex();
+            questionText.text = "Sorry, the correct answer is " + question.GetAnswer(correctAnswerIndex);
+            Image buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
+            buttonImage.sprite = correctButtonSprite;
+        }
     }
 }
