@@ -22,4 +22,9 @@ public class Quiz : MonoBehaviour
             answerText.text = question.GetAnswer(i);
         }
     }
+
+    public void OnAnswerCorrected(int index)
+    {
+
+    }
 }
