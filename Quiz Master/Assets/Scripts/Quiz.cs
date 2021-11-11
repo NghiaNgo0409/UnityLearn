@@ -15,13 +15,7 @@ public class Quiz : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        questionText.text = question.GetQuestion();
 
-        for(int i = 0; i < answerButtons.Length; i++)
-        {
-            TextMeshProUGUI answerText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            answerText.text = question.GetAnswer(i);
-        }
     }
 
     public void OnAnswerCorrected(int index)
@@ -38,6 +32,17 @@ public class Quiz : MonoBehaviour
             questionText.text = "Sorry, the correct answer is " + question.GetAnswer(correctAnswerIndex);
             Image buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
             buttonImage.sprite = correctButtonSprite;
+        }
+    }
+
+    void DisplayQuestion()
+    {
+        questionText.text = question.GetQuestion();
+
+        for(int i = 0; i < answerButtons.Length; i++)
+        {
+            TextMeshProUGUI answerText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+            answerText.text = question.GetAnswer(i);
         }
     }
 }
