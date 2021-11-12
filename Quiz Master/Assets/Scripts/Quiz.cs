@@ -54,10 +54,13 @@ public class Quiz : MonoBehaviour
 
     void GetNewQuestion()
     {
-        SetButtonState(true);
-        SetDefaultButtonSprite();
-        GetRandomQuestion();
-        DisplayQuestion();
+        if(questions.Count > 0)
+        {
+            SetButtonState(true);
+            SetDefaultButtonSprite();
+            GetRandomQuestion();
+            DisplayQuestion();
+        }
     }
 
     void GetRandomQuestion()
