@@ -10,6 +10,8 @@ public class Timer : MonoBehaviour
     float timeValue;
 
     public float fillFraction;
+    public bool isAnsweringQuestion;
+    public bool loadNextQuestion;
 
     // Update is called once per frame
     void Update()
