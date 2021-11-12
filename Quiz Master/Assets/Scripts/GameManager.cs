@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(quiz.isComplete)
+        {
+            quiz.gameObject.SetActive(false);
+            endScreen.gameObject.SetActive(true);
+            endScreen.ShowFinalScore();
+        }
     }
 }
