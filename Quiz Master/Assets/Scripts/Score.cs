@@ -6,4 +6,14 @@ public class Score : MonoBehaviour
 {
     int correctAnswer = 0;
     int questionSeen = 0;
+
+    public int GetCorrectAnswer()
+    {
+        return correctAnswer;
+    }
+
+    public int GetQuestionSeen()
+    {
+        return questionSeen;
+    }
 }
