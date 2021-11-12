@@ -31,6 +31,7 @@ public class Quiz : MonoBehaviour
         timerImage.fillAmount = timer.fillFraction;
         if(timer.loadNextQuestion)
         {
+            hasAnsweredEarly = false;
             GetNewQuestion();
             timer.loadNextQuestion = false;
         }
@@ -38,6 +39,7 @@ public class Quiz : MonoBehaviour
         {
             hasAnsweredEarly = true;
             DisplayAnswer(-1);
+            SetButtonState(false);
         }    
     }
 
