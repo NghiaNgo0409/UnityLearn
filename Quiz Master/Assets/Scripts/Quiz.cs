@@ -20,6 +20,9 @@ public class Quiz : MonoBehaviour
     [Header("Timer")]
     [SerializeField] Image timerImage;
     Timer timer;
+    [Header("Score")]
+    [SerializeField] TextMeshProUGUI scoreText;
+    Score score;
     // Start is called before the first frame update
     void Start()
     {
