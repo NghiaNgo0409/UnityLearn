@@ -28,7 +28,7 @@ public class Quiz : MonoBehaviour
 
     public bool isComplete;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         timer = FindObjectOfType<Timer>();
         score = FindObjectOfType<Score>();
