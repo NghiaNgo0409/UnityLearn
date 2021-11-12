@@ -375,8 +375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cb4e678a7c36c41af37573f671b2d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToCorrectAnswer: 0
-  timeToShowAnswer: 0
+  timeToCorrectAnswer: 15
+  timeToShowAnswer: 5
   fillFraction: 0
   isAnsweringQuestion: 0
   loadNextQuestion: 0
