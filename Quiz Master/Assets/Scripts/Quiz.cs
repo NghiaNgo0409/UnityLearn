@@ -43,6 +43,7 @@ public class Quiz : MonoBehaviour
 
     public void OnAnswerCorrected(int index)
     {
+        hasAnsweredEarly = true;
         DisplayAnswer(index);
         SetButtonState(false);
         timer.CancelTimer();
