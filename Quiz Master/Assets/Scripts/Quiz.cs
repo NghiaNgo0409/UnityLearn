@@ -56,6 +56,7 @@ public class Quiz : MonoBehaviour
     {
         SetButtonState(true);
         SetDefaultButtonSprite();
+        GetRandomQuestion();
         DisplayQuestion();
     }
 
