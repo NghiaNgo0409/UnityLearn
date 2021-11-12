@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class EndScreen : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI finalScoreText;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        finalScoreText = GetComponentInChildren<TextMeshProUGUI>();
     }
 }
