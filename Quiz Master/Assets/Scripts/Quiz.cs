@@ -25,6 +25,8 @@ public class Quiz : MonoBehaviour
     Score score;
     [Header("Progress Bar")]
     [SerializeField] Slider progressBar;
+
+    public bool isComplete;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +60,10 @@ public class Quiz : MonoBehaviour
         SetButtonState(false);
         scoreText.text = "Score: " + score.CalculateScore() + "%";
         timer.CancelTimer();
+        if(progressBar.value == progressBar.maxValue)
+        {
+            isComplete = true;
+        }
     }
 
     void GetNewQuestion()
