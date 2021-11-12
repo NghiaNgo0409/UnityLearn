@@ -42,6 +42,7 @@ public class Quiz : MonoBehaviour
         }
 
         SetButtonState(false);
+        timer.CancelTimer();
     }
 
     void GetNewQuestion()
