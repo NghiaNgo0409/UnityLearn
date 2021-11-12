@@ -23,6 +23,8 @@ public class Quiz : MonoBehaviour
     [Header("Score")]
     [SerializeField] TextMeshProUGUI scoreText;
     Score score;
+    [Header("Progress Bar")]
+    [SerializeField] Slider progressBar;
     // Start is called before the first frame update
     void Start()
     {
