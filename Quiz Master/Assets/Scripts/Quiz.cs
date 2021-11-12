@@ -6,12 +6,17 @@ using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour
 {
+    [Header("Question")]
     [SerializeField] TextMeshProUGUI questionText;
     [SerializeField] QuestionSO question;
+    [Header("Answer")]
     [SerializeField] GameObject[] answerButtons;
     int correctAnswerIndex;
+    [Header("Button")]
     [SerializeField] Sprite defaultButtonSprite;
     [SerializeField] Sprite correctButtonSprite;
+    [Header("Timer")]
+    
     // Start is called before the first frame update
     void Start()
     {
