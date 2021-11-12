@@ -26,4 +26,9 @@ public class Score : MonoBehaviour
     {
         questionSeen++;
     }
+
+    public int CalculateScore()
+    {
+        return Mathf.RoundToInt(correctAnswer / (float)questionSeen * 100);
+    }
 }
