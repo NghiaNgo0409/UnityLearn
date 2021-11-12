@@ -94,6 +94,7 @@ public class Quiz : MonoBehaviour
             questionText.text = "Correct answer!";
             Image buttonImage = answerButtons[index].GetComponent<Image>();
             buttonImage.sprite = correctButtonSprite;
+            score.IncremenCorrectAnswer();
         }
         else
         {
