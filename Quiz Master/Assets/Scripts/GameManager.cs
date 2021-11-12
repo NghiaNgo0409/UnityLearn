@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        quiz.gameObject.SetActive(true);
+        endScreen.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
