@@ -33,6 +33,11 @@ public class Quiz : MonoBehaviour
         {
             GetNewQuestion();
             timer.loadNextQuestion = false;
+        }
+        else if(!hasAnsweredEarly && !timer.isAnsweringQuestion)
+        {
+            hasAnsweredEarly = true;
+            DisplayAnswer(-1);
         }    
     }
 
