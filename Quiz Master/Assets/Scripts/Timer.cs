@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] float timeToCorrectAnswer;
+    [SerializeField] float timeToShowAnswer;
 
     // Update is called once per frame
     void Update()
