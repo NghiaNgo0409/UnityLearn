@@ -12,6 +12,7 @@ public class Quiz : MonoBehaviour
     [Header("Answer")]
     [SerializeField] GameObject[] answerButtons;
     int correctAnswerIndex;
+    bool hasAnsweredEarly;
     [Header("Button")]
     [SerializeField] Sprite defaultButtonSprite;
     [SerializeField] Sprite correctButtonSprite;
