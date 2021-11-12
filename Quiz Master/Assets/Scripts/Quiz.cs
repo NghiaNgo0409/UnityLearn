@@ -62,6 +62,7 @@ public class Quiz : MonoBehaviour
             SetButtonState(true);
             SetDefaultButtonSprite();
             GetRandomQuestion();
+            score.IncrementQuestionSeen();
             DisplayQuestion();
         }
     }
