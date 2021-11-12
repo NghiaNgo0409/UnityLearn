@@ -16,7 +16,8 @@ public class Quiz : MonoBehaviour
     [SerializeField] Sprite defaultButtonSprite;
     [SerializeField] Sprite correctButtonSprite;
     [Header("Timer")]
-    
+    [SerializeField] Image timerImage;
+    Timer timer;
     // Start is called before the first frame update
     void Start()
     {
