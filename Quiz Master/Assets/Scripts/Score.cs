@@ -16,4 +16,14 @@ public class Score : MonoBehaviour
     {
         return questionSeen;
     }
+
+    public void IncremenCorrectAnswer()
+    {
+        correctAnswer++;
+    }
+
+    public void IncrementQuestionSeen()
+    {
+        questionSeen++;
+    }
 }
