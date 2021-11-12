@@ -8,7 +8,7 @@ public class Quiz : MonoBehaviour
 {
     [Header("Question")]
     [SerializeField] TextMeshProUGUI questionText;
-    [SerializeField] QuestionSO question;
+    QuestionSO currentQuestion;
     [Header("Answer")]
     [SerializeField] GameObject[] answerButtons;
     int correctAnswerIndex;
@@ -60,18 +60,18 @@ public class Quiz : MonoBehaviour
 
     void DisplayQuestion()
     {
-        questionText.text = question.GetQuestion();
+        questionText.text = currentQuestion.GetQuestion();
 
         for(int i = 0; i < answerButtons.Length; i++)
         {
             TextMeshProUGUI answerText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            answerText.text = question.GetAnswer(i);
+            answerText.text = currentQuestion.GetAnswer(i);
         }
     }
 
     void DisplayAnswer(int index)
     {
-        if(index == question.GetCorrectAnswerIndex())
+        if(index == currentQuestion.GetCorrectAnswerIndex())
         {
             questionText.text = "Correct answer!";
             Image buttonImage = answerButtons[index].GetComponent<Image>();
@@ -79,8 +79,8 @@ public class Quiz : MonoBehaviour
         }
         else
         {
-            correctAnswerIndex = question.GetCorrectAnswerIndex();
-            questionText.text = "Sorry, the correct answer is " + question.GetAnswer(correctAnswerIndex);
+            correctAnswerIndex = currentQuestion.GetCorrectAnswerIndex();
+            questionText.text = "Sorry, the correct answer is " + currentQuestion.GetAnswer(correctAnswerIndex);
             Image buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
             buttonImage.sprite = correctButtonSprite;
         }
