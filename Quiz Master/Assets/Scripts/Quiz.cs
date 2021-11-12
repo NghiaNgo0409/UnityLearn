@@ -27,20 +27,7 @@ public class Quiz : MonoBehaviour
 
     public void OnAnswerCorrected(int index)
     {
-        if(index == question.GetCorrectAnswerIndex())
-        {
-            questionText.text = "Correct answer!";
-            Image buttonImage = answerButtons[index].GetComponent<Image>();
-            buttonImage.sprite = correctButtonSprite;
-        }
-        else
-        {
-            correctAnswerIndex = question.GetCorrectAnswerIndex();
-            questionText.text = "Sorry, the correct answer is " + question.GetAnswer(correctAnswerIndex);
-            Image buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
-            buttonImage.sprite = correctButtonSprite;
-        }
-
+        DisplayAnswer(index);
         SetButtonState(false);
         timer.CancelTimer();
     }
@@ -60,6 +47,23 @@ public class Quiz : MonoBehaviour
         {
             TextMeshProUGUI answerText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
             answerText.text = question.GetAnswer(i);
+        }
+    }
+
+    void DisplayAnswer(int index)
+    {
+        if(index == question.GetCorrectAnswerIndex())
+        {
+            questionText.text = "Correct answer!";
+            Image buttonImage = answerButtons[index].GetComponent<Image>();
+            buttonImage.sprite = correctButtonSprite;
+        }
+        else
+        {
+            correctAnswerIndex = question.GetCorrectAnswerIndex();
+            questionText.text = "Sorry, the correct answer is " + question.GetAnswer(correctAnswerIndex);
+            Image buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
+            buttonImage.sprite = correctButtonSprite;
         }
     }
 
