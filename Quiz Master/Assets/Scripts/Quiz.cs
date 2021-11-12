@@ -8,6 +8,7 @@ public class Quiz : MonoBehaviour
 {
     [Header("Question")]
     [SerializeField] TextMeshProUGUI questionText;
+    [SerializeField] List<QuestionSO> questions = new List<QuestionSO>();
     QuestionSO currentQuestion;
     [Header("Answer")]
     [SerializeField] GameObject[] answerButtons;
