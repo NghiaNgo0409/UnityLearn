@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    int correctAnswer = 0;
+    int questionSeen = 0;
 }
