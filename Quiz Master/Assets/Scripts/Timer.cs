@@ -19,6 +19,11 @@ public class Timer : MonoBehaviour
         UpdateAnswer();
     }
 
+    public void CancelTimer()
+    {
+        timeValue = 0;
+    }
+
     void UpdateAnswer()
     {
         timeValue -= Time.deltaTime;
