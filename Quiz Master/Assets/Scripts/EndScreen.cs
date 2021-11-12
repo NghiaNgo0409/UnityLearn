@@ -12,4 +12,9 @@ public class EndScreen : MonoBehaviour
     {
         score = FindObjectOfType<Score>();
     }
+
+    public void ShowFinalScore()
+    {
+        finalScoreText.text = "Congratulations!\nYou scored " + score.CalculateScore() + "%";
+    }
 }
