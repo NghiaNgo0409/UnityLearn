@@ -6,6 +6,12 @@ public class GameManager : MonoBehaviour
 {
     Quiz quiz;
     EndScreen endScreen;
+
+    void Awake() 
+    {
+        quiz = FindObjectOfType<Quiz>();
+        endScreen = FindObjectOfType<EndScreen>();
+    }
     // Start is called before the first frame update
     void Start()
     {
