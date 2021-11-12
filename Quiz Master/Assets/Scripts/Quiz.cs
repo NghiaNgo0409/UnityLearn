@@ -52,6 +52,7 @@ public class Quiz : MonoBehaviour
         hasAnsweredEarly = true;
         DisplayAnswer(index);
         SetButtonState(false);
+        scoreText.text = "Score: " + score.CalculateScore() + "%";
         timer.CancelTimer();
     }
 
