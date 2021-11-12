@@ -27,7 +27,12 @@ public class Quiz : MonoBehaviour
 
     void Update() 
     {
-        timerImage.fillAmount = timer.fillFraction;    
+        timerImage.fillAmount = timer.fillFraction;
+        if(timer.loadNextQuestion)
+        {
+            GetNewQuestion();
+            timer.loadNextQuestion = false;
+        }    
     }
 
     public void OnAnswerCorrected(int index)
