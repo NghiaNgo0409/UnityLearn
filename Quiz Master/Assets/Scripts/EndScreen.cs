@@ -6,9 +6,10 @@ using TMPro;
 public class EndScreen : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI finalScoreText;
+    Score score;
     // Start is called before the first frame update
     void Start()
     {
-        finalScoreText = GetComponentInChildren<TextMeshProUGUI>();
+        score = FindObjectOfType<Score>();
     }
 }
