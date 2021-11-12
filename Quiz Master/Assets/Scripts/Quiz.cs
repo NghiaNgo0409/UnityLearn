@@ -30,6 +30,8 @@ public class Quiz : MonoBehaviour
     {
         timer = FindObjectOfType<Timer>();
         score = FindObjectOfType<Score>();
+        progressBar.maxValue = questions.Count;
+        progressBar.value = 0;
     }
 
     void Update() 
