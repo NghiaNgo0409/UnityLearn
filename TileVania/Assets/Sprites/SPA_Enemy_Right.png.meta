@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: df8578d02c68ca540ae9eb0c46988d96
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -570807933488141205
+    second: SPA_Enemy_Right_0
+  - first:
+      213: -7165589731514352205
+    second: SPA_Enemy_Right_1
+  - first:
+      213: -8322909438818461173
+    second: SPA_Enemy_Right_2
+  - first:
+      213: -6255873791086419314
+    second: SPA_Enemy_Right_3
+  - first:
+      213: 8428840200775804847
+    second: SPA_Enemy_Right_4
+  - first:
+      213: -4694928931602649372
+    second: SPA_Enemy_Right_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +119,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SPA_Enemy_Right_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ce67175351418f0800000000000000
+      internalID: -570807933488141205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Enemy_Right_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd76e6aa16be8c90800000000000000
+      internalID: -7165589731514352205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Enemy_Right_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ada7946f51f7c80800000000000000
+      internalID: -8322909438818461173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Enemy_Right_3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e822e9a9eebae29a0800000000000000
+      internalID: -6255873791086419314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Enemy_Right_4
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa726c3318149f470800000000000000
+      internalID: 8428840200775804847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Enemy_Right_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eeae12f20348deb0800000000000000
+      internalID: -4694928931602649372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
