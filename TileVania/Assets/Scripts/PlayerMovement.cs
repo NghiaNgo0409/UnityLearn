@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Run();
     }
 
     void OnMove(InputValue value)
