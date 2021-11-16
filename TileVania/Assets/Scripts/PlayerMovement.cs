@@ -21,6 +21,11 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue value)
     {
         movementValue = value.Get<Vector2>();
-        Debug.Log(movementValue);
+    }
+
+    void Run()
+    {
+        Vector2 playerVelocity = new Vector2(movementValue.x, playerRb.velocity.y);
+        playerRb.velocity = playerVelocity;
     }
 }
