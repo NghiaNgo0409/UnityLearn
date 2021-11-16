@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] float runSpeed = 5f;
     Vector2 movementValue;
     Rigidbody2D playerRb;
     // Start is called before the first frame update
@@ -25,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Run()
     {
-        Vector2 playerVelocity = new Vector2(movementValue.x, playerRb.velocity.y);
+        Vector2 playerVelocity = new Vector2(movementValue.x * runSpeed, playerRb.velocity.y);
         playerRb.velocity = playerVelocity;
     }
 }
