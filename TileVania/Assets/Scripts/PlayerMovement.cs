@@ -8,13 +8,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpSpeed;
     Vector2 movementValue;
     Rigidbody2D playerRb;
-
+    CapsuleCollider2D playerCapsuleCollider;
     Animator playerAnim;
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
+        playerCapsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
