@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed;
+    [SerializeField] float climbSpeed;
     Vector2 movementValue;
     Rigidbody2D playerRb;
     CapsuleCollider2D playerCapsuleCollider;
