@@ -66,10 +66,13 @@ public class PlayerMovement : MonoBehaviour
         if(!playerCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ladder")))
         {
             playerRb.gravityScale = gravityScaleAtStart;
+            playerAnim.SetBool("isClimbing",false);
             return;
         }
         Vector2 climbVelocity = new Vector2(playerRb.velocity.x, movementValue.y * climbSpeed);
         playerRb.velocity = climbVelocity;
         playerRb.gravityScale = 0;
+        bool hasClimb = Mathf.Abs(playerRb.velocity.y) > Mathf.Epsilon;
+        playerAnim.SetBool("isClimbing", hasClimb);
     }
 }
