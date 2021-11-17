@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Run();
+        Flip();
     }
 
     void OnMove(InputValue value)
@@ -28,5 +29,14 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 playerVelocity = new Vector2(movementValue.x * runSpeed, playerRb.velocity.y);
         playerRb.velocity = playerVelocity;
+    }
+    
+    void Flip()
+    {
+        bool hasRun = Mathf.Abs(playerRb.velocity.x) > Mathf.Epsilon;
+        if(hasRun)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(playerRb.velocity.x), 1f);
+        }
     }
 }
