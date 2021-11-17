@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Run();
         Flip();
+        ClimbLadder();
     }
 
     void OnMove(InputValue value)
@@ -55,5 +56,12 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Sign(playerRb.velocity.x), 1f);
         }
+    }
+
+    void ClimbLadder()
+    {
+        if(!playerCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ladder"))) return;
+        Vector2 climbVelocity = new Vector2(playerRb.velocity.x, movementValue.y * climbSpeed);
+        playerRb.velocity = climbVelocity;
     }
 }
