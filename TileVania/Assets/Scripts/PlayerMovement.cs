@@ -28,6 +28,14 @@ public class PlayerMovement : MonoBehaviour
         movementValue = value.Get<Vector2>();
     }
 
+    void OnJump(InputValue value)
+    {
+        if(value.isPressed)
+        {
+            playerRb.velocity += new Vector2(0f, jumpSpeed);
+        }
+    }
+
     void Run()
     {
         Vector2 playerVelocity = new Vector2(movementValue.x * runSpeed, playerRb.velocity.y);
