@@ -7,10 +7,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     Vector2 movementValue;
     Rigidbody2D playerRb;
+
+    Animator playerAnim;
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
+        playerAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 playerVelocity = new Vector2(movementValue.x * runSpeed, playerRb.velocity.y);
         playerRb.velocity = playerVelocity;
+
+        bool hasRun = Mathf.Abs(playerRb.velocity.x) > Mathf.Epsilon;
     }
     
     void Flip()
