@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
+        if(!playerCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) return;
         if(value.isPressed)
         {
             playerRb.velocity += new Vector2(0f, jumpSpeed);
