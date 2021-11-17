@@ -63,8 +63,13 @@ public class PlayerMovement : MonoBehaviour
 
     void ClimbLadder()
     {
-        if(!playerCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ladder"))) return;
+        if(!playerCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ladder")))
+        {
+            playerRb.gravityScale = gravityScaleAtStart;
+            return;
+        }
         Vector2 climbVelocity = new Vector2(playerRb.velocity.x, movementValue.y * climbSpeed);
         playerRb.velocity = climbVelocity;
+        playerRb.gravityScale = 0;
     }
 }
