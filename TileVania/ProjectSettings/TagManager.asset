@@ -50,6 +50,9 @@ TagManager:
   - name: Platform
     uniqueID: 2596713221
     locked: 0
+  - name: Ladder
+    uniqueID: 3369748957
+    locked: 0
   - name: Player
     uniqueID: 1698072065
     locked: 0
