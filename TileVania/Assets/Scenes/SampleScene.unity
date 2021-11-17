@@ -52771,7 +52771,7 @@ GameObject:
   - component: {fileID: 2141791697}
   - component: {fileID: 2141791696}
   - component: {fileID: 2141791695}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ladder Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
