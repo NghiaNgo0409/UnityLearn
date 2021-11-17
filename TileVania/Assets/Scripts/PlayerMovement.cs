@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         playerRb.velocity = playerVelocity;
 
         bool hasRun = Mathf.Abs(playerRb.velocity.x) > Mathf.Epsilon;
+        playerAnim.SetBool("isRunning", hasRun);
     }
     
     void Flip()
