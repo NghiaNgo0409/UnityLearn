@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed;
     [SerializeField] float climbSpeed;
+    float gravityScaleAtStart;
     Vector2 movementValue;
     Rigidbody2D playerRb;
     CapsuleCollider2D playerCapsuleCollider;
@@ -17,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
         playerRb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
         playerCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        gravityScaleAtStart = playerRb.gravityScale;
     }
 
     // Update is called once per frame
