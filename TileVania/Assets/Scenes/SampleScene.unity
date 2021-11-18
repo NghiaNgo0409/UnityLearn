@@ -51010,7 +51010,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -53331,12 +53331,12 @@ Tilemap:
     m_Data: {fileID: -4977721373819348528, guid: 5efbbed7f16ab2048abdea577e810e88, type: 3}
   - m_RefCount: 24
     m_Data: {fileID: -3493280607249542649, guid: 5efbbed7f16ab2048abdea577e810e88, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -3503154757471595975, guid: 5efbbed7f16ab2048abdea577e810e88, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 3803662930465603148, guid: 5efbbed7f16ab2048abdea577e810e88, type: 3}
   - m_RefCount: 2
@@ -53614,7 +53614,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -54904,6 +54904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5368414052955409513, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 60421868bb2f2d4409944934bef15f4c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
 --- !u!4 &2831704843836178382 stripped
