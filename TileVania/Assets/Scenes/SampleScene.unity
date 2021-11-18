@@ -53051,7 +53051,7 @@ GameObject:
   - component: {fileID: 2111484546}
   - component: {fileID: 2111484548}
   m_Layer: 0
-  m_Name: Follow Camera
+  m_Name: Run Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
