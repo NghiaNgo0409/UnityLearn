@@ -52604,7 +52604,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -52813,7 +52813,7 @@ MonoBehaviour:
   m_Instructions:
   - m_FullHash: 1432961145
     m_VirtualCamera: {fileID: 295492368}
-    m_ActivateAfter: 0
+    m_ActivateAfter: 1
     m_MinDuration: 0
   - m_FullHash: 256545655
     m_VirtualCamera: {fileID: 2111484546}
@@ -52832,7 +52832,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
+  m_CustomBlends: {fileID: 11400000, guid: 553f3a660d5db014c9b312496452dfab, type: 2}
   m_ParentHash:
   - m_Hash: 1432961145
     m_ParentHash: 756556552
