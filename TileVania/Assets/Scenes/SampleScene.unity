@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 230510314}
   - component: {fileID: 230510313}
   - component: {fileID: 230510315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Background Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53365,10 +53365,6 @@ PrefabInstance:
     - target: {fileID: 2831704842064116574, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749234143126853286, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
-      propertyPath: climbSpeed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
