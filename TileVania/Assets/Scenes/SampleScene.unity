@@ -52803,7 +52803,7 @@ MonoBehaviour:
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
-  m_AnimatedTarget: {fileID: 0}
+  m_AnimatedTarget: {fileID: 1082330711}
   m_LayerIndex: 0
   m_ShowDebugText: 0
   m_ChildCameras:
@@ -52821,7 +52821,18 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   m_CustomBlends: {fileID: 0}
-  m_ParentHash: []
+  m_ParentHash:
+  - m_Hash: 1432961145
+    m_ParentHash: 756556552
+  - m_Hash: 256545655
+    m_ParentHash: 756556552
+  - m_Hash: -725336713
+    m_ParentHash: 756556552
+--- !u!95 &1082330711 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2831704842064116568, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
+  m_PrefabInstance: {fileID: 2831704843836178381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1203680682
 GameObject:
   m_ObjectHideFlags: 3
