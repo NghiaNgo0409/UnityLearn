@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movementValue;
     Rigidbody2D playerRb;
     CapsuleCollider2D playerCapsuleCollider;
+    BoxCollider2D playerBoxCollider;
     Animator playerAnim;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
         playerRb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
         playerCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        playerBoxCollider = GetComponent<BoxCollider2D>();
         gravityScaleAtStart = playerRb.gravityScale;
     }
 
