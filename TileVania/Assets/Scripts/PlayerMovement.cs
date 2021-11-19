@@ -82,4 +82,12 @@ public class PlayerMovement : MonoBehaviour
         bool hasClimb = Mathf.Abs(playerRb.velocity.y) > Mathf.Epsilon;
         playerAnim.SetBool("isClimbing", hasClimb);
     }
+
+    void Die()
+    {
+        if(playerCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        {
+            isAlive = false;
+        }
+    }
 }
