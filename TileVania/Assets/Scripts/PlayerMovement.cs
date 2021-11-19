@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(!isAlive) return;
         Run();
         Flip();
         ClimbLadder();
@@ -36,11 +36,13 @@ public class PlayerMovement : MonoBehaviour
 
     void OnMove(InputValue value)
     {
+        if(!isAlive) return;
         movementValue = value.Get<Vector2>();
     }
 
     void OnJump(InputValue value)
     {
+        if(!isAlive) return;
         if(!playerBoxCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) return;
         if(value.isPressed)
         {
