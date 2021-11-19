@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         Run();
         Flip();
         ClimbLadder();
+        Die();
     }
 
     void OnMove(InputValue value)
