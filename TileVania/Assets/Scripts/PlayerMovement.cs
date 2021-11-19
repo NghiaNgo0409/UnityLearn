@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed;
     [SerializeField] float climbSpeed;
+    [SerializeField] Vector2 deathKick = new Vector2();
     float gravityScaleAtStart;
     Vector2 movementValue;
     Rigidbody2D playerRb;
