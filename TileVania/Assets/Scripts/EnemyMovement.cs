@@ -15,6 +15,6 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        enemyRb.velocity = new Vector2(moveSpeed, 0f);
     }
 }
