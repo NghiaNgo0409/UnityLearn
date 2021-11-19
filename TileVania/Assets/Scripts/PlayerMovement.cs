@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpSpeed;
     [SerializeField] float climbSpeed;
     [SerializeField] Vector2 deathKick = new Vector2();
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] Transform gunTransform;
     float gravityScaleAtStart;
     Vector2 movementValue;
     Rigidbody2D playerRb;
