@@ -221,6 +221,8 @@ MonoBehaviour:
   jumpSpeed: 20
   climbSpeed: 5
   deathKick: {x: 20, y: 20}
+  bulletPrefab: {fileID: 3174307630624100712, guid: 04159117390c6cb42a46d4715aa0b459, type: 3}
+  gunTransform: {fileID: 6927417394040162261}
 --- !u!61 &4200658422154955581
 BoxCollider2D:
   m_ObjectHideFlags: 0
