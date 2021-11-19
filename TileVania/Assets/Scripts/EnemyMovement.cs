@@ -22,4 +22,10 @@ public class EnemyMovement : MonoBehaviour
     {
         transform.localScale = new Vector2(-(Mathf.Sign(enemyRb.velocity.x)), 1f);
     }
+
+    private void OnTriggerExit2D(Collider2D other) 
+    {
+        enemyRb.velocity = -enemyRb.velocity;
+        Flip();    
+    }
 }
