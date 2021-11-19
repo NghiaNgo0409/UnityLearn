@@ -38,6 +38,12 @@ public class PlayerMovement : MonoBehaviour
         Die();
     }
 
+    void OnFire(InputValue value)
+    {
+        if(!isAlive) return;
+        Instantiate(bulletPrefab, gunTransform.position, transform.rotation);
+    }
+
     void OnMove(InputValue value)
     {
         if(!isAlive) return;
