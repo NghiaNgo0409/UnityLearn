@@ -53614,7 +53614,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -54487,6 +54487,7 @@ GameObject:
   - component: {fileID: 1720981569}
   - component: {fileID: 1720981570}
   - component: {fileID: 1720981571}
+  - component: {fileID: 1720981572}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -54578,6 +54579,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &1720981572
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720981568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.017845154, y: -0.11777878}
+  m_Size: {x: 0.76444244, y: 0.76444244}
+  m_Direction: 0
 --- !u!1 &2111484545
 GameObject:
   m_ObjectHideFlags: 0
