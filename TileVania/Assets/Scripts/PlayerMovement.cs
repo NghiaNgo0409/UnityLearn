@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D playerCapsuleCollider;
     BoxCollider2D playerBoxCollider;
     Animator playerAnim;
+
+    bool isAlive = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         Run();
         Flip();
         ClimbLadder();
