@@ -53614,7 +53614,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -54491,7 +54491,7 @@ GameObject:
   - component: {fileID: 1720981573}
   - component: {fileID: 1720981574}
   - component: {fileID: 1720981575}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
