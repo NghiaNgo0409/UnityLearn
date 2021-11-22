@@ -14,6 +14,6 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        bulletRb.velocity = new Vector2(1f , 0f);
     }
 }
