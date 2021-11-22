@@ -13,11 +13,12 @@ public class Bullet : MonoBehaviour
     {
         bulletRb = GetComponent<Rigidbody2D>();
         player = FindObjectOfType<PlayerMovement>();
+        xSpeed = player.transform.localScale.x * bulletSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        bulletRb.velocity = new Vector2(bulletSpeed , 0f);
+        bulletRb.velocity = new Vector2(xSpeed , 0f);
     }
 }
