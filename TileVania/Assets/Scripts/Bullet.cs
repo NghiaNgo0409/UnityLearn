@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] float bulletSpeed;
+    float xSpeed;
     Rigidbody2D bulletRb;
     // Start is called before the first frame update
     void Start()
