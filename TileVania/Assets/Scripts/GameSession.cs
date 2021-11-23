@@ -24,4 +24,16 @@ public class GameSession : MonoBehaviour
     {
         
     }
+
+    public void ProcessGameSession()
+    {
+        if(playerLives > 1)
+        {
+            TakesLive();
+        }
+        else
+        {
+            ResetLevel();
+        }
+    }
 }
