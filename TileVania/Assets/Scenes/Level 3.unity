@@ -169,7 +169,7 @@ Transform:
   - {fileID: 2141791692}
   - {fileID: 259001423}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &230510311
 GameObject:
@@ -53418,7 +53418,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2794924813761685991, guid: 63cb60a7dda16fc4cb706c8338fcfbd8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2794924813761685991, guid: 63cb60a7dda16fc4cb706c8338fcfbd8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53473,6 +53473,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2071390595565696207, guid: 127da9649ede635448adaac80a1e8575, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 2831704843836178383}
+    - target: {fileID: 2071390595819631522, guid: 127da9649ede635448adaac80a1e8575, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 2831704843836178383}
+    - target: {fileID: 2071390596151351856, guid: 127da9649ede635448adaac80a1e8575, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 2831704843836178383}
     - target: {fileID: 2071390596212693883, guid: 127da9649ede635448adaac80a1e8575, type: 3}
       propertyPath: m_Name
       value: Cameras
@@ -53523,15 +53535,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2071390596337432927, guid: 127da9649ede635448adaac80a1e8575, type: 3}
       propertyPath: orthographic size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2071390596337432992, guid: 127da9649ede635448adaac80a1e8575, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.9799995
+      value: -2.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071390596896364027, guid: 127da9649ede635448adaac80a1e8575, type: 3}
+      propertyPath: m_AnimatedTarget
+      value: 
+      objectReference: {fileID: 2831704843836178382}
+    - target: {fileID: 2071390596896364027, guid: 127da9649ede635448adaac80a1e8575, type: 3}
+      propertyPath: m_ParentHash.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2071390596896364027, guid: 127da9649ede635448adaac80a1e8575, type: 3}
       propertyPath: m_ChildCameras.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127da9649ede635448adaac80a1e8575, type: 3}
@@ -54133,28 +54153,20 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 2141791697}
     m_ColliderPaths:
-    - - X: 27812541
-        Y: 100000100
-      - X: 22187459
-        Y: 100000100
-      - X: 22187400
-        Y: 100000041
-      - X: 22187400
-        Y: 29999959
-      - X: 22187459
-        Y: 29999900
-      - X: 27812541
-        Y: 29999900
-      - X: 27812600
-        Y: 29999959
-      - X: 27812600
-        Y: 100000041
+    - - X: 27812500
+        Y: 30000000
+      - X: 27812500
+        Y: 100000000
+      - X: 22187500
+        Y: 100000000
+      - X: 22187500
+        Y: 30000000
   m_CompositePaths:
     m_Paths:
-    - - {x: 2.7812247, y: 2.99999}
-      - {x: 2.7812247, y: 10.00001}
-      - {x: 2.21874, y: 9.999974}
-      - {x: 2.2187753, y: 2.99999}
+    - - {x: 2.781221, y: 3}
+      - {x: 2.781221, y: 10}
+      - {x: 2.21875, y: 9.99997}
+      - {x: 2.2187793, y: 3}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &2141791696
@@ -54203,7 +54215,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2831704842064116569, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2831704842064116569, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54251,3 +54263,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
+--- !u!95 &2831704843836178382 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2831704842064116568, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
+  m_PrefabInstance: {fileID: 2831704843836178381}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2831704843836178383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2831704842064116569, guid: 5f53592e163d9eb4a8fc4676a862767b, type: 3}
+  m_PrefabInstance: {fileID: 2831704843836178381}
+  m_PrefabAsset: {fileID: 0}
