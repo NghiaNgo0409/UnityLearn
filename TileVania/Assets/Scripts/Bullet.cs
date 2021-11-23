@@ -21,4 +21,13 @@ public class Bullet : MonoBehaviour
     {
         bulletRb.velocity = new Vector2(xSpeed , 0f);
     }
+
+    void OnTriggerEnter2D(Collider2D other) 
+    {
+        if(other.tag == "Enemy")
+        {
+            Destroy(other.gameObject);
+        }
+        Destroy(gameObject);
+    }
 }
