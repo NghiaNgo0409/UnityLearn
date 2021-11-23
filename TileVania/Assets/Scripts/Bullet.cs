@@ -33,6 +33,9 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other) 
     {
-        Destroy(gameObject);
+        if(other.gameObject.layer != LayerMask.NameToLayer("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
