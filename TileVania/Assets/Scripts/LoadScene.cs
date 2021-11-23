@@ -17,4 +17,9 @@ public class LoadScene : MonoBehaviour
         }
         SceneManager.LoadScene(nextSceneIndex);
     }
+
+    void OnTriggerEnter2D(Collider2D other) 
+    {
+        StartCoroutine("LoadNextScene");    
+    }
 }
