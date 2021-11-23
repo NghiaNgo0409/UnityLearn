@@ -49,5 +49,6 @@ public class GameSession : MonoBehaviour
     void ResetLevel()
     {
         SceneManager.LoadScene(0);
+        Destroy(gameObject);
     }
 }
