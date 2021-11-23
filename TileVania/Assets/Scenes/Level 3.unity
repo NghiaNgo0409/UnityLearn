@@ -54835,7 +54835,7 @@ Tilemap:
   m_GameObject: {fileID: 2141791691}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: 17, y: 4, z: 0}
+  - first: {x: 2, y: 3, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -54845,7 +54845,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 17, y: 5, z: 0}
+  - first: {x: 2, y: 4, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -54855,7 +54855,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 17, y: 6, z: 0}
+  - first: {x: 2, y: 5, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -54865,7 +54865,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 17, y: 7, z: 0}
+  - first: {x: 2, y: 6, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -54875,7 +54875,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 17, y: 8, z: 0}
+  - first: {x: 2, y: 7, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -54885,7 +54885,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 17, y: 9, z: 0}
+  - first: {x: 2, y: 8, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -54895,7 +54895,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 17, y: 10, z: 0}
+  - first: {x: 2, y: 9, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -54978,20 +54978,28 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 2141791697}
     m_ColliderPaths:
-    - - X: 177812496
-        Y: 40000000
-      - X: 177812496
-        Y: 110000000
-      - X: 172187504
-        Y: 110000000
-      - X: 172187504
-        Y: 40000000
+    - - X: 27812541
+        Y: 100000100
+      - X: 22187459
+        Y: 100000100
+      - X: 22187400
+        Y: 100000041
+      - X: 22187400
+        Y: 29999959
+      - X: 22187459
+        Y: 29999900
+      - X: 27812541
+        Y: 29999900
+      - X: 27812600
+        Y: 29999959
+      - X: 27812600
+        Y: 100000041
   m_CompositePaths:
     m_Paths:
-    - - {x: 17.781221, y: 4}
-      - {x: 17.781221, y: 11}
-      - {x: 17.21875, y: 10.99997}
-      - {x: 17.218779, y: 4}
+    - - {x: 2.7812247, y: 2.99999}
+      - {x: 2.7812247, y: 10.00001}
+      - {x: 2.21874, y: 9.999974}
+      - {x: 2.2187753, y: 2.99999}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &2141791696
