@@ -54089,7 +54089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2071390596337432927, guid: 127da9649ede635448adaac80a1e8575, type: 3}
       propertyPath: orthographic size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2071390596896364027, guid: 127da9649ede635448adaac80a1e8575, type: 3}
       propertyPath: m_AnimatedTarget
