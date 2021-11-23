@@ -20,6 +20,9 @@ public class LoadScene : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) 
     {
-        StartCoroutine("LoadNextScene");    
+        if(other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            StartCoroutine(LoadNextScene()); 
+        }   
     }
 }
