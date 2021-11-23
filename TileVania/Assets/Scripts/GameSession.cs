@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameSession : MonoBehaviour
 {
+    [SerializeField] int playerLives;
     // Start is called before the first frame update
     void Awake()
     {
