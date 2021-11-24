@@ -53592,8 +53592,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 999999
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bb85db89e63ba194b8ed5701e12215f3, type: 2}
+  m_sharedMaterial: {fileID: 4123400903319956959, guid: bb85db89e63ba194b8ed5701e12215f3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -53726,8 +53726,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 99
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bb85db89e63ba194b8ed5701e12215f3, type: 2}
+  m_sharedMaterial: {fileID: 4123400903319956959, guid: bb85db89e63ba194b8ed5701e12215f3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -54806,7 +54806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2071390596337432927, guid: 127da9649ede635448adaac80a1e8575, type: 3}
       propertyPath: orthographic size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2071390596896364027, guid: 127da9649ede635448adaac80a1e8575, type: 3}
       propertyPath: m_AnimatedTarget
