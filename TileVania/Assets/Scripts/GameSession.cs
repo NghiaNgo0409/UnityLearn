@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class GameSession : MonoBehaviour
 {
-    int playerScore;
+    int playerScore = 0;
     [SerializeField] int playerLives;
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
@@ -27,7 +27,7 @@ public class GameSession : MonoBehaviour
     void Start() 
     {
         livesText.text = playerLives.ToString();
-        playerScore = 0;
+        scoreText.text = playerScore.ToString();
     }
 
     public void AddScore(int scoreToAdd)
