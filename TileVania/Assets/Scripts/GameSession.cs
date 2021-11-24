@@ -27,12 +27,13 @@ public class GameSession : MonoBehaviour
     void Start() 
     {
         livesText.text = playerLives.ToString();
+        playerScore = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    void AddScore(int scoreToAdd)
     {
-        
+        playerScore += scoreToAdd;
+        scoreText.text = playerScore.ToString();
     }
 
     public void ProcessGameSession()
