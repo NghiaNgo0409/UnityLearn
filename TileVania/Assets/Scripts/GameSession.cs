@@ -7,6 +7,8 @@ using TMPro;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives;
+    [SerializeField] TextMeshProUGUI livesText;
+    [SerializeField] TextMeshProUGUI scoreText;
     // Start is called before the first frame update
     void Awake()
     {
