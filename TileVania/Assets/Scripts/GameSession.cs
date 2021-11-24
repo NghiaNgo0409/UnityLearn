@@ -30,7 +30,7 @@ public class GameSession : MonoBehaviour
         playerScore = 0;
     }
 
-    void AddScore(int scoreToAdd)
+    public void AddScore(int scoreToAdd)
     {
         playerScore += scoreToAdd;
         scoreText.text = playerScore.ToString();
