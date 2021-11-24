@@ -25,7 +25,7 @@ public class GameSession : MonoBehaviour
 
     void Start() 
     {
-        
+        livesText.text = playerLives.ToString();
     }
 
     // Update is called once per frame
