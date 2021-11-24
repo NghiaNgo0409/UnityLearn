@@ -6,10 +6,12 @@ public class CoinPickup : MonoBehaviour
 {
     [SerializeField] AudioClip coinPickupSFX;
     [SerializeField] int scoreToAdd = 100;
+    bool wasCollected = false;
     void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if(other.gameObject.layer == LayerMask.NameToLayer("Player") && !wasCollected)
         {
+            wasCollected = true;
             FindObjectOfType<GameSession>().AddScore(scoreToAdd);
             AudioSource.PlayClipAtPoint(coinPickupSFX, Camera.main.transform.position);
             Destroy(gameObject);
