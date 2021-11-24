@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives;
@@ -19,6 +19,11 @@ public class GameSession : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
+    }
+
+    void Start() 
+    {
+        
     }
 
     // Update is called once per frame
