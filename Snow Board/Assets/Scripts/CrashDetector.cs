@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CrashDetector : MonoBehaviour
 {
-    float delayTime = 1.0f;
+    [SerializeField]float delayTime = 1.0f;
     [SerializeField] ParticleSystem crashEffect;
     [SerializeField] AudioClip crashSFX;
     bool hasCrashed = false;
