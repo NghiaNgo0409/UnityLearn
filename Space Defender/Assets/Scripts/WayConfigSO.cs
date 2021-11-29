@@ -2,17 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WayConfigSO : MonoBehaviour
+[CreateAssetMenu(menuName = "Way Config", fileName = "New Way Config")]
+public class WayConfigSO : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Transform pathPrefab;
+    [SerializeField] float moveSpeed = 5f;
+
+    public Transform GetStartingWayPoint()
     {
-        
+        return pathPrefab.GetChild(0);
     }
 
-    // Update is called once per frame
-    void Update()
+    public List<Transform> GetWayPoints()
     {
-        
+        List<Transform> waypoints = new List<Transform>();
+        foreach(Transform waypoint in pathPrefab)
+        {
+            waypoints.Add(waypoint);
+        }
+        return waypoints;
+    }
+
+    public float GetMoveSpeed()
+    {
+        return moveSpeed;
     }
 }
