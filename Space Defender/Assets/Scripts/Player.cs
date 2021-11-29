@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        InitBounds();
     }
 
     // Update is called once per frame
@@ -29,6 +29,8 @@ public class Player : MonoBehaviour
     void InitBounds()
     {
         Camera camera = Camera.main;
+        minBound = camera.ViewportToWorldPoint(new Vector2(0,0));
+        maxBound = camera.ViewportToWorldPoint(new Vector2(1,1));
     }
 
     void Move()
