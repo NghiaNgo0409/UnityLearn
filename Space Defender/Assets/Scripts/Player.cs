@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     [SerializeField] float paddingTop;
     [SerializeField] float paddingBottom;
     Vector2 rawInput;
+    Vector2 minBound;
+    Vector2 maxBound;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,11 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+    }
+
+    void InitBounds()
+    {
+        Camera camera = Camera.main;
     }
 
     void Move()
