@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    Vector2 rawInput;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +15,17 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Move();
+    }
+
+    private void Move()
+    {
+        Vector3 delta = rawInput;
+        transform.position += delta;
     }
 
     void OnMove(InputValue value)
     {
-        value.Get<Vector2>();
+        rawInput = value.Get<Vector2>();
     }
 }
