@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawnEnemy();
+        StartCoroutine(SpawnEnemy());
     }
 
     // Update is called once per frame
@@ -17,11 +17,12 @@ public class EnemySpawner : MonoBehaviour
         
     }
 
-    void SpawnEnemy()
+    IEnumerator SpawnEnemy()
     {
         for(int i = 0; i < currentWave.GetEnemyCount(); i++)
         {
             Instantiate(currentWave.GetEnemy(i), currentWave.GetStartingWayPoint().position, Quaternion.identity, transform);
+            yield return new WaitForSeconds(currentWave.GetRandomTimeSpawn());
         }
     }
 
