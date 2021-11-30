@@ -7,6 +7,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] List<WayConfigSO> wayConfigs;
     WayConfigSO currentWave;
     [SerializeField] float timeBetweenPaths;
+    [SerializeField] bool isLooping;
     // Start is called before the first frame update
     void Start()
     {
