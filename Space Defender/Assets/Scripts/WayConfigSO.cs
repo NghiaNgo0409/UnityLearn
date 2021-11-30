@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Way Config", fileName = "New Way Config")]
 public class WayConfigSO : ScriptableObject
 {
+    [SerializeField] List<GameObject> enemyPrefabs;
     [SerializeField] Transform pathPrefab;
     [SerializeField] float moveSpeed = 5f;
 
