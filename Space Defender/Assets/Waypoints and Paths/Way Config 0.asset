@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c1943af3f615f43a71f93ebd29af0f, type: 3}
   m_Name: Way Config 0
   m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 3717966507747642276, guid: 5474ea6eafa00b847bbc719240b5a007, type: 3}
+  - {fileID: 3717966507747642276, guid: 5474ea6eafa00b847bbc719240b5a007, type: 3}
+  - {fileID: 3717966507747642276, guid: 5474ea6eafa00b847bbc719240b5a007, type: 3}
   pathPrefab: {fileID: 5026581724505292982, guid: ee0a5083556635b479347246661bbd6b, type: 3}
   moveSpeed: 5
