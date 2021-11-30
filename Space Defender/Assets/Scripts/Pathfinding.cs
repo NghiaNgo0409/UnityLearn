@@ -17,6 +17,20 @@ public class Pathfinding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        FindPath();
+    }
+    
+    void FindPath()
+    {
+        if(waypointIndex < waypoints.Count)
+        {
+            Vector3 targetPosition = waypoints[waypointIndex].position;
+            float delta = wayConfig.GetMoveSpeed() * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, delta);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
