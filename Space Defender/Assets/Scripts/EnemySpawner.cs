@@ -6,10 +6,11 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] List<WayConfigSO> wayConfigs;
     WayConfigSO currentWave;
+    [SerializeField] float timeBetweenPaths;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawnEnemy());
+        StartCoroutine(SpawnEnemyWave());
     }
 
     // Update is called once per frame
@@ -18,12 +19,17 @@ public class EnemySpawner : MonoBehaviour
         
     }
 
-    IEnumerator SpawnEnemy()
+    IEnumerator SpawnEnemyWave()
     {
-        for(int i = 0; i < currentWave.GetEnemyCount(); i++)
+        foreach(WayConfigSO wave in wayConfigs)
         {
-            Instantiate(currentWave.GetEnemy(i), currentWave.GetStartingWayPoint().position, Quaternion.identity, transform);
-            yield return new WaitForSeconds(currentWave.GetRandomTimeSpawn());
+            currentWave = wave;
+            for(int i = 0; i < currentWave.GetEnemyCount(); i++)
+            {
+                Instantiate(currentWave.GetEnemy(i), currentWave.GetStartingWayPoint().position, Quaternion.identity, transform);
+                yield return new WaitForSeconds(currentWave.GetRandomTimeSpawn());
+            }
+            yield return new WaitForSeconds(timeBetweenPaths);
         }
     }
 
