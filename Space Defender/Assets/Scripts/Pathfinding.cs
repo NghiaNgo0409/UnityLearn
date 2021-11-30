@@ -27,6 +27,10 @@ public class Pathfinding : MonoBehaviour
             Vector3 targetPosition = waypoints[waypointIndex].position;
             float delta = wayConfig.GetMoveSpeed() * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, delta);
+            if(transform.position == targetPosition)
+            {
+                waypointIndex++;
+            }
         }
         else
         {
