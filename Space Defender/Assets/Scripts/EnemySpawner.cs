@@ -24,4 +24,9 @@ public class EnemySpawner : MonoBehaviour
             Instantiate(currentWave.GetEnemy(i), currentWave.GetStartingWayPoint().position, Quaternion.identity, transform);
         }
     }
+
+    public WayConfigSO GetCurrentWave()
+    {
+        return currentWave;
+    }
 }
