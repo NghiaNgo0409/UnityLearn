@@ -8,6 +8,9 @@ public class WayConfigSO : ScriptableObject
     [SerializeField] List<GameObject> enemyPrefabs;
     [SerializeField] Transform pathPrefab;
     [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float timeBetweenEnemySpawn;
+    [SerializeField] float timeVariances;
+    [SerializeField] float minimunTimeSpawn;
 
     public int GetEnemyCount()
     {
