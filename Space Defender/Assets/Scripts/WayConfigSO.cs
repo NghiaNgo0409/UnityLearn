@@ -41,4 +41,10 @@ public class WayConfigSO : ScriptableObject
     {
         return moveSpeed;
     }
+
+    public float GetRandomTimeSpawn()
+    {
+        float spawnTime = Random.Range(timeBetweenEnemySpawn - timeVariances, timeBetweenEnemySpawn + timeVariances);
+        return Mathf.Clamp(spawnTime, minimunTimeSpawn, float.MaxValue);
+    }
 }
