@@ -9,6 +9,16 @@ public class WayConfigSO : ScriptableObject
     [SerializeField] Transform pathPrefab;
     [SerializeField] float moveSpeed = 5f;
 
+    public int GetEnemyCount()
+    {
+        return enemyPrefabs.Count;
+    }
+
+    public GameObject GetEnemy(int index)
+    {
+        return enemyPrefabs[index];
+    }
+
     public Transform GetStartingWayPoint()
     {
         return pathPrefab.GetChild(0);
