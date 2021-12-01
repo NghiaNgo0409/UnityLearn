@@ -15,4 +15,13 @@ public class Health : MonoBehaviour
             damage.Hit();
         }    
     }
+
+    void TakeDamage(int damage)
+    {
+        health -= damage;
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
