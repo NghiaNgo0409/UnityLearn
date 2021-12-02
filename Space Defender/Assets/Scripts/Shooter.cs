@@ -52,7 +52,14 @@ public class Shooter : MonoBehaviour
             Destroy(instance, bulletLifetime);
             float timeFiringRate = Random.Range(baseFiringRate - firingRateVariance, baseFiringRate + firingRateVariance);
             timeFiringRate = Mathf.Clamp(timeFiringRate, minFiringRate, float.MaxValue);
-            yield return new WaitForSeconds(timeFiringRate);
+            if(useAI)
+            {
+                yield return new WaitForSeconds(timeFiringRate);
+            }
+            else
+            {
+                yield return new WaitForSeconds(baseFiringRate);
+            }
         }
     }
 }
