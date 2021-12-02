@@ -46,4 +46,9 @@ public class Player : MonoBehaviour
     {
         rawInput = value.Get<Vector2>();
     }
+
+    void OnFire(InputValue value)
+    {
+        
+    }
 }
