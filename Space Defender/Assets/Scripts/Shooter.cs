@@ -28,6 +28,12 @@ public class Shooter : MonoBehaviour
 
     IEnumerator FireContinuously()
     {
-        
+        while(true)
+        {
+            GameObject instance = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            Rigidbody2D instanceRb = instance.GetComponent<Rigidbody2D>();
+            instanceRb.velocity = transform.up * bulletSpeed;
+            Destroy(instance, bulletLifetime);
+        }
     }
 }
