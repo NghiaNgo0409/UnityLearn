@@ -11,7 +11,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] float firingRateVariance;
     [SerializeField] float minFiringRate;
     [SerializeField] bool useAI;
-    public bool isFiring;
+    [HideInInspector]public bool isFiring;
 
     Coroutine fireCoroutine;
     // Start is called before the first frame update
