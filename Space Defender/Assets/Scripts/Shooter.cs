@@ -34,6 +34,7 @@ public class Shooter : MonoBehaviour
             Rigidbody2D instanceRb = instance.GetComponent<Rigidbody2D>();
             instanceRb.velocity = transform.up * bulletSpeed;
             Destroy(instance, bulletLifetime);
+            yield return new WaitForSeconds(firingRate);
         }
     }
 }
