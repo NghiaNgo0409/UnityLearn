@@ -8,13 +8,17 @@ public class Shooter : MonoBehaviour
     [SerializeField] float bulletSpeed;
     [SerializeField] float bulletLifetime;
     [SerializeField] float firingRate;
+    [SerializeField] bool useAI;
     public bool isFiring;
 
     Coroutine fireCoroutine;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(useAI)
+        {
+            isFiring = true;
+        }
     }
 
     // Update is called once per frame
