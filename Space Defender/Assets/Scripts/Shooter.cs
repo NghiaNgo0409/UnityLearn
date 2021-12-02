@@ -20,4 +20,14 @@ public class Shooter : MonoBehaviour
     {
         
     }
+
+    void Fire()
+    {
+
+    }
+
+    IEnumerator FireContinuously()
+    {
+        
+    }
 }
