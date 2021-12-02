@@ -20,7 +20,7 @@ public class Shooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Fire();
     }
 
     void Fire()
