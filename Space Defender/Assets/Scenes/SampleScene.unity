@@ -334,7 +334,7 @@ MonoBehaviour:
   wayConfigs:
   - {fileID: 11400000, guid: df3c8b0887f064340a0807b99ba5dcdf, type: 2}
   - {fileID: 11400000, guid: 34209404a68ea224d873efe5eca03207, type: 2}
-  timeBetweenPaths: 2
+  timeBetweenPaths: 1
   isLooping: 1
 --- !u!1 &982437275
 GameObject:
@@ -421,6 +421,14 @@ PrefabInstance:
     - target: {fileID: 204302446959324151, guid: 97e007f4dd0b70d4dba5ac6d05c6fb08, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 204302447370034795, guid: 97e007f4dd0b70d4dba5ac6d05c6fb08, type: 3}
+      propertyPath: minFiringRate
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 204302447370034795, guid: 97e007f4dd0b70d4dba5ac6d05c6fb08, type: 3}
+      propertyPath: baseFiringRate
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97e007f4dd0b70d4dba5ac6d05c6fb08, type: 3}
