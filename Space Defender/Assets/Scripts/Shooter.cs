@@ -7,7 +7,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] float bulletSpeed;
     [SerializeField] float bulletLifetime;
-
+    [SerializeField] float firingRate;
     public bool isFiring;
     // Start is called before the first frame update
     void Start()
