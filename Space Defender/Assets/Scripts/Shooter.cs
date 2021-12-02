@@ -31,8 +31,8 @@ public class Shooter : MonoBehaviour
         }
         else if(!isFiring && fireCoroutine != null)
         {
-            fireCoroutine = null;
             StopCoroutine(fireCoroutine);
+            fireCoroutine = null;
         }
     }
 
