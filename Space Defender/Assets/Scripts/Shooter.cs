@@ -9,6 +9,8 @@ public class Shooter : MonoBehaviour
     [SerializeField] float bulletLifetime;
     [SerializeField] float firingRate;
     public bool isFiring;
+
+    Coroutine fireCoroutine;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,15 @@ public class Shooter : MonoBehaviour
 
     void Fire()
     {
-
+        if(isFiring && fireCoroutine == null)
+        {
+            fireCoroutine = StartCoroutine(FireContinuously());
+        }
+        else if(!isFiring && fireCoroutine != null)
+        {
+            fireCoroutine = null;
+            StopCoroutine(fireCoroutine);
+        }
     }
 
     IEnumerator FireContinuously()
