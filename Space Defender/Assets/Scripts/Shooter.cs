@@ -50,7 +50,9 @@ public class Shooter : MonoBehaviour
             Rigidbody2D instanceRb = instance.GetComponent<Rigidbody2D>();
             instanceRb.velocity = transform.up * bulletSpeed;
             Destroy(instance, bulletLifetime);
-            yield return new WaitForSeconds(baseFiringRate);
+            float timeFiringRate = Random.Range(baseFiringRate - firingRateVariance, baseFiringRate + firingRateVariance);
+            timeFiringRate = Mathf.Clamp(timeFiringRate, minFiringRate, float.MaxValue);
+            yield return new WaitForSeconds(timeFiringRate);
         }
     }
 }
