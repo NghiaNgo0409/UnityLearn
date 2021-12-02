@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5393551546161389526}
   - component: {fileID: 5393551546161389527}
   - component: {fileID: 5393551546161389480}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet_Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3000132373124254703}
   - component: {fileID: 8819266093571719123}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: laserRed05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
