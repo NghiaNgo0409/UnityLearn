@@ -12,6 +12,7 @@ public class Health : MonoBehaviour
         if(damage != null)
         {
             TakeDamage(damage.GetDamage());
+            PlayHitEffect();
             damage.Hit();
         }    
     }
