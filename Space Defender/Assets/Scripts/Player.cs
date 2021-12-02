@@ -14,6 +14,13 @@ public class Player : MonoBehaviour
     Vector2 rawInput;
     Vector2 minBound;
     Vector2 maxBound;
+
+    Shooter shooter;
+
+    void Awake() 
+    {
+        shooter = GetComponent<Shooter>();    
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +56,6 @@ public class Player : MonoBehaviour
 
     void OnFire(InputValue value)
     {
-        
+
     }
 }
