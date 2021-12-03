@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class AudioPlayer : MonoBehaviour
 {
+    [Header("Shooting")]
+    [SerializeField] AudioClip shootingClip;
+    [SerializeField] float shootingVolume;
     // Start is called before the first frame update
     void Start()
     {
