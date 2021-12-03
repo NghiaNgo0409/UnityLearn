@@ -58,6 +58,7 @@ public class Shooter : MonoBehaviour
             Destroy(instance, bulletLifetime);
             float timeFiringRate = Random.Range(baseFiringRate - firingRateVariance, baseFiringRate + firingRateVariance);
             timeFiringRate = Mathf.Clamp(timeFiringRate, minFiringRate, float.MaxValue);
+            audioPlayer.PlayShootingClip();
             if(useAI)
             {
                 yield return new WaitForSeconds(timeFiringRate);
