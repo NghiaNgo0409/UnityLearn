@@ -393,7 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537ede45e2ed9eb4b9ec4b836f636441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingClip: {fileID: 0}
+  shootingClip: {fileID: 8300000, guid: 3eb736188bd4fae429f57efb80882872, type: 3}
   shootingVolume: 0
 --- !u!1 &982437275
 GameObject:
