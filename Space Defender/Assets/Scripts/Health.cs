@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
     AudioPlayer audioPlayer;
     void Awake() 
     {
-        audioPlayer.PlayDamageClip();    
+        audioPlayer = FindObjectOfType<AudioPlayer>();    
     }
     void OnTriggerEnter2D(Collider2D other) 
     {
@@ -17,6 +17,7 @@ public class Health : MonoBehaviour
         if(damage != null)
         {
             TakeDamage(damage.GetDamage());
+            audioPlayer.PlayDamageClip();
             PlayHitEffect();
             damage.Hit();
         }    
