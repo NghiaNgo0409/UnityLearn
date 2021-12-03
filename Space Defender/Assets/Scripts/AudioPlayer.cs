@@ -7,6 +7,10 @@ public class AudioPlayer : MonoBehaviour
     [Header("Shooting")]
     [SerializeField] AudioClip shootingClip;
     [SerializeField] [Range(0f, 1f)] float shootingVolume;
+
+    [Header("Damage")]
+    [SerializeField] AudioClip damageClip;
+    [SerializeField] [Range(0f, 1f)] float damageVolume;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +26,11 @@ public class AudioPlayer : MonoBehaviour
     public void PlayShootingClip()
     {
         PlayClip(shootingClip, shootingVolume);
+    }
+
+    public void PlayDamageClip()
+    {
+        PlayClip(damageClip, damageVolume);
     }
 
     void PlayClip(AudioClip clip, float volume)
