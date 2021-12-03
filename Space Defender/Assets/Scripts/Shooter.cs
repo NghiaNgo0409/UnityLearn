@@ -13,7 +13,13 @@ public class Shooter : MonoBehaviour
     [SerializeField] bool useAI;
     [HideInInspector]public bool isFiring;
 
+    AudioPlayer audioPlayer;
+
     Coroutine fireCoroutine;
+    void Awake() 
+    {
+        audioPlayer = FindObjectOfType<AudioPlayer>();    
+    }
     // Start is called before the first frame update
     void Start()
     {
