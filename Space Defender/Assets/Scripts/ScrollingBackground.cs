@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ScrollingBackground : MonoBehaviour
 {
+    [SerializeField] Vector2 moveSpeed;
+
+    Vector2 offset;
+    Material material;
     // Start is called before the first frame update
     void Start()
     {
