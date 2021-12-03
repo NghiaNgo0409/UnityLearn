@@ -19,6 +19,11 @@ public class AudioPlayer : MonoBehaviour
         
     }
 
+    public void PlayShootingClip()
+    {
+        PlayClip(shootingClip, shootingVolume);
+    }
+
     void PlayClip(AudioClip clip, float volume)
     {
         if(clip != null)
