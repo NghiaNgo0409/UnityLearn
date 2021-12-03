@@ -17,6 +17,7 @@ public class ScrollingBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        offset += moveSpeed * Time.deltaTime;
+        material.mainTextureOffset = offset;
     }
 }
