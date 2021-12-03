@@ -11,7 +11,7 @@ public class ScrollingBackground : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        material = GetComponent<SpriteRenderer>().material;
     }
 
     // Update is called once per frame
