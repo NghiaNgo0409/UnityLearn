@@ -6,6 +6,11 @@ public class Health : MonoBehaviour
 {
     [SerializeField] int health = 50;
     [SerializeField] ParticleSystem hitEffect;
+    AudioPlayer audioPlayer;
+    void Awake() 
+    {
+        audioPlayer.PlayDamageClip();    
+    }
     void OnTriggerEnter2D(Collider2D other) 
     {
         DamageDealer damage = other.GetComponent<DamageDealer>();
