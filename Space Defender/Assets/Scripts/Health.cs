@@ -32,6 +32,11 @@ public class Health : MonoBehaviour
         }
     }
 
+    public void GetHealth()
+    {
+        return health;
+    }
+
     void PlayHitEffect()
     {
         ParticleSystem instance = Instantiate(hitEffect, transform.position, Quaternion.identity);
