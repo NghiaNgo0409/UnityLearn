@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] int health = 50;
     [SerializeField] int score = 50;
+    [SerializeField] bool isPlayer;
     [SerializeField] ParticleSystem hitEffect;
     AudioPlayer audioPlayer;
     void Awake() 
