@@ -9,9 +9,11 @@ public class Health : MonoBehaviour
     [SerializeField] bool isPlayer;
     [SerializeField] ParticleSystem hitEffect;
     AudioPlayer audioPlayer;
+    ScoreKeeper ScoreKeeper;
     void Awake() 
     {
         audioPlayer = FindObjectOfType<AudioPlayer>();    
+        ScoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
     void OnTriggerEnter2D(Collider2D other) 
     {
