@@ -32,13 +32,14 @@ public class Health : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
-            
+            Die();
         }
     }
 
     void Die()
     {
         Destroy(gameObject);
+        ScoreKeeper.ModifyScore(score);
     }
 
     public int GetHealth()
