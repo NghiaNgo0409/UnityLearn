@@ -32,7 +32,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void GetHealth()
+    public int GetHealth()
     {
         return health;
     }
