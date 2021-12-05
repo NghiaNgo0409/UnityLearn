@@ -468,6 +468,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da7f934af19334469b46354585f5fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 1802983913}
+  playerHealth: {fileID: 204302447370034794}
+  scoreText: {fileID: 1827467397}
 --- !u!1 &551251505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,3 +1510,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97e007f4dd0b70d4dba5ac6d05c6fb08, type: 3}
+--- !u!114 &204302447370034794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -6948825776092040942, guid: 97e007f4dd0b70d4dba5ac6d05c6fb08, type: 3}
+  m_PrefabInstance: {fileID: 204302447370034793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a14a18fca2d304cbe23d3e4e937472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
