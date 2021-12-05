@@ -21,6 +21,7 @@ public class UIDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        healthBar.maxValue = playerHealth.GetHealth();
+        scoreText.text = scoreKeeper.GetScore().ToString("00000000");
     }
 }
