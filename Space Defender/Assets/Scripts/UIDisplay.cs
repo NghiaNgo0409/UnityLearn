@@ -15,7 +15,7 @@ public class UIDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
 
     // Update is called once per frame
