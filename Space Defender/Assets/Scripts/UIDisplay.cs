@@ -18,10 +18,15 @@ public class UIDisplay : MonoBehaviour
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
 
+    void Start()
+    {
+        healthBar.maxValue = playerHealth.GetHealth();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        healthBar.maxValue = playerHealth.GetHealth();
+        healthBar.value = playerHealth.GetHealth();
         scoreText.text = scoreKeeper.GetScore().ToString("00000000");
     }
 }
