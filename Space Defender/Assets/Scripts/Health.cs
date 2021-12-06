@@ -10,10 +10,13 @@ public class Health : MonoBehaviour
     [SerializeField] ParticleSystem hitEffect;
     AudioPlayer audioPlayer;
     ScoreKeeper ScoreKeeper;
+
+    LevelManager levelManager;
     void Awake() 
     {
         audioPlayer = FindObjectOfType<AudioPlayer>();    
         ScoreKeeper = FindObjectOfType<ScoreKeeper>();
+        levelManager = FindObjectOfType<LevelManager>();
     }
     void OnTriggerEnter2D(Collider2D other) 
     {
