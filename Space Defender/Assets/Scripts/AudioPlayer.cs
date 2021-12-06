@@ -11,6 +11,22 @@ public class AudioPlayer : MonoBehaviour
     [Header("Damage")]
     [SerializeField] AudioClip damageClip;
     [SerializeField] [Range(0f, 1f)] float damageVolume;
+
+    static AudioPlayer instance;
+
+    void Awake()
+    {
+        if(instance != null)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
