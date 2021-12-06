@@ -19,4 +19,10 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameOver");
     }
+
+    IEnumerator WaitAndLoad(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
+    }
 }
