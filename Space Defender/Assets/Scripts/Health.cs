@@ -42,7 +42,14 @@ public class Health : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
-        ScoreKeeper.ModifyScore(score);
+        if(!isPlayer)
+        {
+            ScoreKeeper.ModifyScore(score);
+        }
+        else
+        {
+            levelManager.LoadGameOver();
+        }
     }
 
     public int GetHealth()
