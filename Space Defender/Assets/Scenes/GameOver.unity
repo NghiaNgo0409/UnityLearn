@@ -1074,7 +1074,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1196701952}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2018569932}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1196701952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1195,7 +1207,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645225513}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2018569932}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1645225513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1556,3 +1580,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 307f71a15f1ac40459bf715109f4d7cb, type: 3}
+--- !u!114 &2018569932 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4959036975293216050, guid: 307f71a15f1ac40459bf715109f4d7cb, type: 3}
+  m_PrefabInstance: {fileID: 2018569931}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b6d76d7151dbf48ac8a6ef0ed62c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
