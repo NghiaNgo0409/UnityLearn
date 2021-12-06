@@ -33,7 +33,7 @@ public class ScoreKeeper : MonoBehaviour
         Mathf.Clamp(score, 0, int.MaxValue);
     }
 
-    void ResetScore()
+    public void ResetScore()
     {
         score = 0;
     }
