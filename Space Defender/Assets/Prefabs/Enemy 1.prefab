@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a14a18fca2d304cbe23d3e4e937472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  score: 50
+  health: 35
+  score: 30
   isPlayer: 0
   hitEffect: {fileID: 2619595959234768675, guid: a4ca099818609e24ca17e079625c830f, type: 3}
 --- !u!114 &-2166237744949222381
