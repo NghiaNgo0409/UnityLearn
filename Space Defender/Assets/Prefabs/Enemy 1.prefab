@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  score: 50
+  isPlayer: 0
   hitEffect: {fileID: 2619595959234768675, guid: a4ca099818609e24ca17e079625c830f, type: 3}
 --- !u!114 &-2166237744949222381
 MonoBehaviour:
@@ -204,7 +206,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 68801385d9eac3b408325f2c754507db, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e4a056b0d51ec7a48b0483e0bd8a5e9f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
