@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dfdc3c29b33da4d92a719486cdd46a, type: 3}
   m_Name: Text2
   m_EditorClassIdentifier: 
-  text: 
+  text: 'I''m in A
+
+'
