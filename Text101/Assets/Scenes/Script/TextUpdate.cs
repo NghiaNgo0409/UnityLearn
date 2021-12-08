@@ -9,7 +9,7 @@ public class TextUpdate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        text.text = "Hello guys bla bla bla !!!";
     }
 
     // Update is called once per frame
