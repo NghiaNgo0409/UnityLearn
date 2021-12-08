@@ -11,7 +11,8 @@ public class TextUpdate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        text.text = "Hello guys bla bla bla !!!";
+        currentState = startingState;
+        text.text = currentState.GetText();
     }
 
     // Update is called once per frame
