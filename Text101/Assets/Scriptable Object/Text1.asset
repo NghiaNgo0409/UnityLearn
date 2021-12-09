@@ -17,3 +17,6 @@ MonoBehaviour:
     1. Go A
 
     2. Go B'
+  nextState:
+  - {fileID: 11400000, guid: eabc920f6a2276741809a01a3bc44fb8, type: 2}
+  - {fileID: 11400000, guid: 77d29c6ad1d30c945b0c80aaedb3abbd, type: 2}
