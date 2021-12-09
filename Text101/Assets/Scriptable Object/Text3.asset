@@ -15,3 +15,6 @@ MonoBehaviour:
   text: 'I''m in B
 
 '
+  nextState:
+  - {fileID: 11400000, guid: eabc920f6a2276741809a01a3bc44fb8, type: 2}
+  - {fileID: 11400000}
