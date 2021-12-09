@@ -34,7 +34,7 @@ public class TextUpdate : MonoBehaviour
         {
             currentState = nextStates[1];
         }
-        else
+        else if(Input.GetKeyDown(KeyCode.Alpha0))
         {
             currentState = startingState;
         }
