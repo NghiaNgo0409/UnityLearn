@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    [SerializeField] int currentSceen;
+    int currentSceen;
 
     void Start()
     {
