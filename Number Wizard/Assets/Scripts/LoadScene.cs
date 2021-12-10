@@ -11,4 +11,9 @@ public class LoadScene : MonoBehaviour
     {
         currentSceen = SceneManager.GetActiveScene().buildIndex;
     }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(currentSceen + 1);
+    }
 }
