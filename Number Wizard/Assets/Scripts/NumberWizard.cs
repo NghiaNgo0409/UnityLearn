@@ -10,7 +10,12 @@ public class NumberWizard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        NextGuess();
+    }
+
+    void NextGuess()
+    {
+        guess = Random.Range(min, max);
     }
 
 }
