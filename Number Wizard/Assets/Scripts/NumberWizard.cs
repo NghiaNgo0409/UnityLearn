@@ -28,6 +28,10 @@ public class NumberWizard : MonoBehaviour
         NextGuess();
     }
 
-    
+    public void LowerGuess()
+    {
+        max = guess;
+        NextGuess();
+    }
 
 }
