@@ -693,9 +693,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3cee4db02a8fed40956df683558db52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: 0
-  max: 0
-  guessText: {fileID: 0}
+  min: 1
+  max: 1000
+  guessText: {fileID: 43717649}
 --- !u!1 &855070733
 GameObject:
   m_ObjectHideFlags: 0
