@@ -19,6 +19,7 @@ public class NumberWizard : MonoBehaviour
     void NextGuess()
     {
         guess = Random.Range(min, max);
+        guessText.text = guess.ToString();
     }
 
 }
