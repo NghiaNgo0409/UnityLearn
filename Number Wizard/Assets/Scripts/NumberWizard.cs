@@ -22,4 +22,12 @@ public class NumberWizard : MonoBehaviour
         guessText.text = guess.ToString();
     }
 
+    public void HigherGuess()
+    {
+        min = guess + 1;
+        NextGuess();
+    }
+
+    
+
 }
