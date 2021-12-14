@@ -15,5 +15,6 @@ public class Paddle : MonoBehaviour
     void Update()
     {
         float mousePos = Input.mousePosition.x / Screen.width * screenWidthUnit;
+        Vector2 paddlePos = new Vector2(mousePos, transform.position.y);
     }
 }
