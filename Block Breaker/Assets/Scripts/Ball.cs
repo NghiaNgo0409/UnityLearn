@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    float distancePaddleToBall;
+    Vector2 distancePaddleToBall;
     [SerializeField] Paddle paddle;
     // Start is called before the first frame update
     void Start()
