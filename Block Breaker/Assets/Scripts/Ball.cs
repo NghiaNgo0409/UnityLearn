@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    [SerializeField] float pushX;
+    [SerializeField] float pushY;
     Vector2 distancePaddleToBall;
     [SerializeField] Paddle paddle;
     // Start is called before the first frame update
@@ -24,7 +26,7 @@ public class Ball : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(2f,15f);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(pushX, pushY);
         }
     }
 
