@@ -15,6 +15,11 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        LockBallToPaddle();
+    }
+
+    private void LockBallToPaddle()
+    {
         transform.position = (Vector2)paddle.transform.position + distancePaddleToBall;
     }
 }
