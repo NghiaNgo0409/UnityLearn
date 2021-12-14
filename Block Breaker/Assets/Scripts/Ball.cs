@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,9 +17,18 @@ public class Ball : MonoBehaviour
     void Update()
     {
         LockBallToPaddle();
+        LaunchGame();
     }
 
-    private void LockBallToPaddle()
+    void LaunchGame()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(2f,15f);
+        }
+    }
+
+    void LockBallToPaddle()
     {
         transform.position = (Vector2)paddle.transform.position + distancePaddleToBall;
     }
