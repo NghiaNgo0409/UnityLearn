@@ -17,4 +17,14 @@ public class LoadScene : MonoBehaviour
     {
         
     }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
