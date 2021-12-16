@@ -8,6 +8,7 @@ public class Block : MonoBehaviour
     [SerializeField] AudioClip breakSound;
     private void Start() {
         play = FindObjectOfType<Play>();
+        play.CountBreakableBlock();
     }
     private void OnCollisionEnter2D(Collision2D other) {
         AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
