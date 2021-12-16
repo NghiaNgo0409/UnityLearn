@@ -281,6 +281,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f101388bd46158f4bace7129bebb86e2, type: 3}
+--- !u!114 &403304613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 858513754468996896, guid: f101388bd46158f4bace7129bebb86e2, type: 3}
+  m_PrefabInstance: {fileID: 403304612}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc5f9d3d85733f4694e6a1af8eb2520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +591,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 811490933}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 403304613}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &811490933
 MonoBehaviour:
   m_ObjectHideFlags: 0
