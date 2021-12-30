@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnumTest : MonoBehaviour
 {
+    enum State {Ready, Playing, GameOver};
     // Start is called before the first frame update
     void Start()
     {
