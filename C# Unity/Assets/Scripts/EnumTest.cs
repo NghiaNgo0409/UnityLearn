@@ -8,7 +8,8 @@ public class EnumTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        State state = State.Playing;
+        print((int)state);
     }
 
     // Update is called once per frame
