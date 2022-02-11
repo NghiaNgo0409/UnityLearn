@@ -31,6 +31,11 @@ public class BallController : MonoBehaviour
         {
             SwitchDirection();
         }
+        
+        if(!Physics.Raycast(transform.position, Vector3.down, Mathf.Infinity))
+        {
+            ballRb.velocity = new Vector3(0, -speed, 0);
+        }
     }
 
     void SwitchDirection()
