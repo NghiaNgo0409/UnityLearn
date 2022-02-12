@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlatformSpawner : MonoBehaviour
 {
     [SerializeField] GameObject platformPrefabs;
+    [SerializeField] GameObject diamondPrefabs;
     float size;
     Vector3 lastPos;
     // Start is called before the first frame update
@@ -12,7 +13,7 @@ public class PlatformSpawner : MonoBehaviour
     {
         lastPos = platformPrefabs.transform.position;
         size = platformPrefabs.transform.localScale.x;
-        InvokeRepeating("SpawnPlatform", 0.1f, 0.2f);
+        InvokeRepeating("SpawnPlatform", 0.1f, 0.1f);
     }
 
     // Update is called once per frame
@@ -40,6 +41,12 @@ public class PlatformSpawner : MonoBehaviour
         currentPos.x += size;
         lastPos = currentPos;
         Instantiate(platformPrefabs, currentPos, Quaternion.identity);
+
+        int rand = Random.Range(0, 4);
+        if(rand < 1)
+        {
+            Instantiate(diamondPrefabs, new Vector3(currentPos.x, currentPos.y + 1.5f, currentPos.z), diamondPrefabs.transform.rotation);
+        }
     }
 
     void SpawnZ()
