@@ -17,7 +17,6 @@ public class BallController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(ballRb.velocity);
         if(!started)
         {
             if(Input.GetMouseButtonDown(0))

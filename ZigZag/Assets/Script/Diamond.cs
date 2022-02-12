@@ -21,6 +21,7 @@ public class Diamond : MonoBehaviour
         if(other.tag == "Ball")
         {
             Instantiate(diamondParticles, transform.position, Quaternion.identity);
+            ScoreManager.instance.AddScore(5);
             Destroy(gameObject);
         }
     }
