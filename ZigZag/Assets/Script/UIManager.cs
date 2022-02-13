@@ -10,6 +10,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] Text tapText;
     [SerializeField] GameObject startPanel;
     [SerializeField] GameObject gameOverPanel;
+    [SerializeField] Text scoreText;
+    [SerializeField] Text bestScore1;
+    [SerializeField] Text bestScore2;
     
 
     private void Awake() {
@@ -38,6 +41,9 @@ public class UIManager : MonoBehaviour
 
     public void GameOver()
     {
+        scoreText.text = PlayerPrefs.GetInt("score").ToString();
+        bestScore1.text = PlayerPrefs.GetInt("highscore").ToString();
+        bestScore2.text = PlayerPrefs.GetInt("highscore").ToString();
         gameOverPanel.SetActive(true);
     }
 

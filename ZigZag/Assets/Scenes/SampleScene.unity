@@ -473,6 +473,9 @@ MonoBehaviour:
   tapText: {fileID: 1984115566}
   startPanel: {fileID: 141785096}
   gameOverPanel: {fileID: 1765379457}
+  scoreText: {fileID: 598722984}
+  bestScore1: {fileID: 589714555}
+  bestScore2: {fileID: 1780421681}
 --- !u!1 &453473979
 GameObject:
   m_ObjectHideFlags: 0
