@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
     public void GameStart()
     {
         tapText.gameObject.SetActive(false);
-        startPanel.GetComponent<Animation>().Play("StartPanelSlide");
+        startPanel.GetComponent<Animator>().Play("StartPanelSlide");
     }
 
     public void GameOver()

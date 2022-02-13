@@ -17,7 +17,6 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         score = 0;
-        InvokeRepeating("IncrementScore", .1f, .5f);
     }
 
     // Update is called once per frame
@@ -34,5 +33,15 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(int val)
     {
         score += val;
+    }
+
+    public void StartScore()
+    {
+        InvokeRepeating("IncrementScore", .1f, .5f);
+    }
+
+    public void StopScore()
+    {
+        CancelInvoke("IncrementScore");
     }
 }

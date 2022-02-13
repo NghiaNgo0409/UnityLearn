@@ -21,6 +21,7 @@ public class BallController : MonoBehaviour
         {
             if(Input.GetMouseButtonDown(0))
             {
+                GameManager.instance.StartGame();
                 ballRb.velocity = new Vector3(speed, 0, 0);
                 started = true;
             }
@@ -34,6 +35,7 @@ public class BallController : MonoBehaviour
         if(!Physics.Raycast(transform.position, Vector3.down, Mathf.Infinity))
         {
             ballRb.velocity = new Vector3(0, -speed, 0);
+            GameManager.instance.StopGame();
         }
     }
 
