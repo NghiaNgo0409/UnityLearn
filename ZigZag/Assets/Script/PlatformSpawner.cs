@@ -13,7 +13,6 @@ public class PlatformSpawner : MonoBehaviour
     {
         lastPos = platformPrefabs.transform.position;
         size = platformPrefabs.transform.localScale.x;
-        InvokeRepeating("SpawnPlatform", 0.1f, 0.1f);
     }
 
     // Update is called once per frame
@@ -55,5 +54,15 @@ public class PlatformSpawner : MonoBehaviour
         currentPos.z += size;
         lastPos = currentPos;
         Instantiate(platformPrefabs, currentPos, Quaternion.identity);
+    }
+
+    public void TurnOnSpawnPlatform()
+    {
+        InvokeRepeating("SpawnPlatform", 0.1f, 0.1f);
+    }
+
+    public void TurnOffSpawnPlatform()
+    {
+        StopCoroutine("SpawnPlatform");
     }
 }

@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        bestScore2.text = "High Score: " + PlayerPrefs.GetInt("highscore");
     }
 
     // Update is called once per frame
@@ -43,7 +43,6 @@ public class UIManager : MonoBehaviour
     {
         scoreText.text = PlayerPrefs.GetInt("score").ToString();
         bestScore1.text = PlayerPrefs.GetInt("highscore").ToString();
-        bestScore2.text = PlayerPrefs.GetInt("highscore").ToString();
         gameOverPanel.SetActive(true);
     }
 
