@@ -4,13 +4,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     Rigidbody2D playerRb;
     Animator playerAnim;
+
+    public string areaTransitionName;
+
+    private void Awake() {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
