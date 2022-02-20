@@ -9,6 +9,8 @@ public class CanvasMainMenu : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _txtScore;
 
+    [SerializeField] GameObject panelSetting;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +30,6 @@ public class CanvasMainMenu : MonoBehaviour
     }
     public void OnlButtonSetingClick()
     {
-        Debug.Log("Setting");
-        int a = 5;
-        string name = "Thay Long dep trai";
-        Debug.Log("Hello: " + name + " " + a);
-        Debug.Log($"Hello: {name} {a}");
+        panelSetting.gameObject.SetActive(true);
     }
 }
