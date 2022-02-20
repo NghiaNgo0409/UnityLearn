@@ -4,61 +4,61 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 3680043366892224719
-    second: PC Computer - MapleStory - Extra A_0
+    second: Player_Idle_0
   - first:
       213: -7100022422481877962
-    second: PC Computer - MapleStory - Extra A_1
+    second: Player_Idle_1
   - first:
       213: -5871056866873264946
-    second: PC Computer - MapleStory - Extra A_2
+    second: Player_Idle_2
   - first:
       213: 1916889547813193179
-    second: PC Computer - MapleStory - Extra A_3
+    second: Player_Idle_3
   - first:
       213: -1954387015689501857
-    second: PC Computer - MapleStory - Extra A_4
+    second: Player_Idle_4
   - first:
       213: -950057856062019608
-    second: PC Computer - MapleStory - Extra A_5
+    second: Player_Run_0
   - first:
       213: -7219800904932838047
-    second: PC Computer - MapleStory - Extra A_6
+    second: Player_Run_1
   - first:
       213: 146032746936195410
-    second: PC Computer - MapleStory - Extra A_7
+    second: Player_Run_2
   - first:
       213: -8237763064109354366
-    second: PC Computer - MapleStory - Extra A_8
+    second: Player_Run_3
   - first:
       213: 7688581598637237426
-    second: PC Computer - MapleStory - Extra A_9
+    second: Player_Run_4
   - first:
       213: 3659897147900411194
-    second: PC Computer - MapleStory - Extra A_10
+    second: Player_Attack0_0
   - first:
       213: 7996794489802668518
-    second: PC Computer - MapleStory - Extra A_11
+    second: Player_Attack0_1
   - first:
       213: -8746124844913849500
     second: PC Computer - MapleStory - Extra A_12
   - first:
       213: 1761440852707696419
-    second: PC Computer - MapleStory - Extra A_13
+    second: Player_Attack0_2
   - first:
       213: 2558000338860586260
     second: PC Computer - MapleStory - Extra A_14
   - first:
       213: 1576497720074416294
-    second: PC Computer - MapleStory - Extra A_15
+    second: Player_Attack0_3
   - first:
       213: -2232445980000263109
     second: PC Computer - MapleStory - Extra A_16
   - first:
       213: -6680375006949351402
-    second: PC Computer - MapleStory - Extra A_17
+    second: Player_Attack0_4
   - first:
       213: -4113081400985651885
-    second: PC Computer - MapleStory - Extra A_18
+    second: Player_Attack0_5
   - first:
       213: 3761512969460464048
     second: PC Computer - MapleStory - Extra A_19
@@ -241,15 +241,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_0
+      name: Player_Idle_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 1
         y: 730
         width: 54
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +262,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_1
+      name: Player_Idle_1
       rect:
         serializedVersion: 2
         x: 60
@@ -270,7 +270,7 @@ TextureImporter:
         width: 54
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,7 +283,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_2
+      name: Player_Idle_2
       rect:
         serializedVersion: 2
         x: 131
@@ -291,7 +291,7 @@ TextureImporter:
         width: 39
         height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,15 +304,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_3
+      name: Player_Idle_3
       rect:
         serializedVersion: 2
         x: 175
-        y: 730
+        y: 731
         width: 53
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,7 +325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_4
+      name: Player_Idle_4
       rect:
         serializedVersion: 2
         x: 239
@@ -333,7 +333,7 @@ TextureImporter:
         width: 53
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,7 +346,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_5
+      name: Player_Run_0
       rect:
         serializedVersion: 2
         x: 2
@@ -354,7 +354,7 @@ TextureImporter:
         width: 54
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,7 +367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_6
+      name: Player_Run_1
       rect:
         serializedVersion: 2
         x: 65
@@ -375,7 +375,7 @@ TextureImporter:
         width: 59
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,7 +388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_7
+      name: Player_Run_2
       rect:
         serializedVersion: 2
         x: 132
@@ -396,7 +396,7 @@ TextureImporter:
         width: 54
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,7 +409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_8
+      name: Player_Run_3
       rect:
         serializedVersion: 2
         x: 196
@@ -417,7 +417,7 @@ TextureImporter:
         width: 53
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,7 +430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_9
+      name: Player_Run_4
       rect:
         serializedVersion: 2
         x: 10
@@ -438,7 +438,7 @@ TextureImporter:
         width: 45
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,15 +451,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_10
+      name: Player_Attack0_0
       rect:
         serializedVersion: 2
         x: 15
-        y: 476
+        y: 477
         width: 74
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,15 +472,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_11
+      name: Player_Attack0_1
       rect:
         serializedVersion: 2
         x: 105
-        y: 476
+        y: 475
         width: 41
         height: 76
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,36 +493,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_12
-      rect:
-        serializedVersion: 2
-        x: 157
-        y: 480
-        width: 47
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46b01b1eac58f9680800000000000000
-      internalID: -8746124844913849500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_13
+      name: Player_Attack0_2
       rect:
         serializedVersion: 2
         x: 158
         y: 472
         width: 86
-        height: 61
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,36 +514,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_14
+      name: Player_Attack0_3
       rect:
         serializedVersion: 2
-        x: 251
-        y: 480
-        width: 46
-        height: 71
+        x: 253
+        y: 471
+        width: 85
+        height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4153d1d51c7df7320800000000000000
-      internalID: 2558000338860586260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_15
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 472
-        width: 86
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,36 +535,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_16
+      name: Player_Attack0_4
       rect:
         serializedVersion: 2
-        x: 344
-        y: 481
-        width: 46
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b34e5dd8532c401e0800000000000000
-      internalID: -2232445980000263109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_17
-      rect:
-        serializedVersion: 2
-        x: 345
+        x: 346
         y: 472
-        width: 86
-        height: 61
+        width: 85
+        height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,15 +556,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_18
+      name: Player_Attack0_5
       rect:
         serializedVersion: 2
         x: 434
         y: 472
         width: 86
-        height: 61
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -635,27 +572,6 @@ TextureImporter:
       bones: []
       spriteID: 355fbf102466be6c0800000000000000
       internalID: -4113081400985651885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_19
-      rect:
-        serializedVersion: 2
-        x: 434
-        y: 483
-        width: 44
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b937bacd14933430800000000000000
-      internalID: 3761512969460464048
       vertices: []
       indices: 
       edges: []
@@ -669,7 +585,7 @@ TextureImporter:
         width: 64
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -690,7 +606,7 @@ TextureImporter:
         width: 83
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -711,7 +627,7 @@ TextureImporter:
         width: 83
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -732,7 +648,7 @@ TextureImporter:
         width: 82
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -753,7 +669,7 @@ TextureImporter:
         width: 81
         height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -774,7 +690,7 @@ TextureImporter:
         width: 44
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -795,7 +711,7 @@ TextureImporter:
         width: 48
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -816,7 +732,7 @@ TextureImporter:
         width: 69
         height: 107
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -832,12 +748,12 @@ TextureImporter:
       name: PC Computer - MapleStory - Extra A_28
       rect:
         serializedVersion: 2
-        x: 7
+        x: 6
         y: 108
-        width: 54
+        width: 58
         height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -850,57 +766,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_29
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 157
-        width: 6
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7704c8278ed8dc880800000000000000
-      internalID: -8589052884831944585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_30
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 152
-        width: 8
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e66fb871daa3f3ed0800000000000000
-      internalID: -2432160758657976722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: PC Computer - MapleStory - Extra A_31
       rect:
         serializedVersion: 2
-        x: 7
+        x: 6
         y: 32
-        width: 54
+        width: 58
         height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -908,27 +782,6 @@ TextureImporter:
       bones: []
       spriteID: a92e70992e5210bc0800000000000000
       internalID: -3818729353873202534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_32
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 81
-        width: 6
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7503dd24a89363f00800000000000000
-      internalID: 1096126825301356631
       vertices: []
       indices: 
       edges: []
@@ -942,7 +795,7 @@ TextureImporter:
         width: 49
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -963,7 +816,7 @@ TextureImporter:
         width: 49
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -984,7 +837,7 @@ TextureImporter:
         width: 49
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1005,7 +858,7 @@ TextureImporter:
         width: 49
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1026,7 +879,7 @@ TextureImporter:
         width: 49
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1047,7 +900,7 @@ TextureImporter:
         width: 49
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1068,7 +921,7 @@ TextureImporter:
         width: 47
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1076,27 +929,6 @@ TextureImporter:
       bones: []
       spriteID: 212232e97c373cce0800000000000000
       internalID: -1386136959111192046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - MapleStory - Extra A_40
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 76
-        width: 8
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9dfecaffbbd969d60800000000000000
-      internalID: 7896672427414712281
       vertices: []
       indices: 
       edges: []
@@ -1110,7 +942,7 @@ TextureImporter:
         width: 45
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
