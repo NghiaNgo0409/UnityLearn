@@ -8,11 +8,17 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] Tilemap themap;
     Vector3 bottomLeft;
     Vector3 topRight;
+
+    float halfHeight;
+    float halfWidth;
     // Start is called before the first frame update
     void Start()
     {
-        bottomLeft = themap.localBounds.min;
-        topRight = themap.localBounds.max;
+        halfHeight = Camera.main.orthographicSize;
+        halfWidth = halfHeight * Camera.main.aspect;
+
+        bottomLeft = themap.localBounds.min + new Vector3(halfWidth, halfHeight, transform.position.z);
+        topRight = themap.localBounds.max + new Vector3(-halfWidth, -halfHeight, transform.position.z);
     }
 
     // Update is called once per frame
