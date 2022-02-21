@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
 
     public string areaTransitionName;
 
+    Vector3 bottomLeft;
+    Vector3 topRight;
+
     private void Awake() {
         if(instance == null)
         {
@@ -26,6 +29,7 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
         DontDestroyOnLoad(gameObject);
+        
     }
 
     // Update is called once per frame
@@ -41,5 +45,13 @@ public class PlayerController : MonoBehaviour
             playerAnim.SetFloat("lastPosX", Input.GetAxisRaw("Horizontal"));
             playerAnim.SetFloat("lastPosY", Input.GetAxisRaw("Vertical"));
         }
+
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeft.x, topRight.x), Mathf.Clamp(transform.position.y, bottomLeft.y, topRight.y), transform.position.z);
+    }
+
+    public void SetBound(Vector3 bot, Vector3 top)
+    {
+        bottomLeft = bot + new Vector3(0.5f, 0.5f, 0f);
+        topRight = top + new Vector3(-0.5f, -0.5f, 0f);
     }
 }

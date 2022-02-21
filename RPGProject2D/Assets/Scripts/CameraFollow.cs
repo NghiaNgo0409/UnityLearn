@@ -19,6 +19,8 @@ public class CameraFollow : MonoBehaviour
 
         bottomLeft = themap.localBounds.min + new Vector3(halfWidth, halfHeight, transform.position.z);
         topRight = themap.localBounds.max + new Vector3(-halfWidth, -halfHeight, transform.position.z);
+
+        PlayerController.instance.SetBound(themap.localBounds.min, themap.localBounds.max);
     }
 
     // Update is called once per frame
