@@ -7,6 +7,8 @@ public class AreaExit : MonoBehaviour
 {
     [SerializeField] int sceneLoadIndex;
     [SerializeField] string areaTransitionName;
+    [SerializeField] float waitTimeLoadScene;
+    bool isLoadedScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +18,21 @@ public class AreaExit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(isLoadedScene)
+        {
+            waitTimeLoadScene -= Time.deltaTime;
+            if(waitTimeLoadScene <= 0)
+            {
+                SceneManager.LoadScene(sceneLoadIndex);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Player")
         {
-            SceneManager.LoadScene(sceneLoadIndex);
+            isLoadedScene = true;
+            UIFade.instance.FadeToBlack();
             PlayerController.instance.areaTransitionName = areaTransitionName;
         }
     }

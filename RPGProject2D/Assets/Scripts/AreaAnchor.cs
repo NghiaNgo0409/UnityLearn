@@ -11,6 +11,7 @@ public class AreaAnchor : MonoBehaviour
         if(PlayerController.instance.areaTransitionName == areaName)
         {
             PlayerController.instance.transform.position = transform.position;
+            UIFade.instance.FadeFromBlack();
         }
     }
 
