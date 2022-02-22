@@ -490,9 +490,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Hello!
-  - My names is Kathy
+  - n-CowDuy
+  - Hello
+  - My name is CowDuy
   - How are you ?
+  - n-Hero
+  - Hi!
+  - I'm fine
 --- !u!1001 &832002709
 PrefabInstance:
   m_ObjectHideFlags: 0
