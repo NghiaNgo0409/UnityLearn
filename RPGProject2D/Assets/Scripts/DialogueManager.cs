@@ -38,6 +38,7 @@ public class DialogueManager : MonoBehaviour
             if(currentLine >= dialogueLines.Length)
             {
                 dialogueBox.SetActive(false);
+                PlayerController.instance.canMove = true;
             }
             else
             {
@@ -57,5 +58,6 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = lines[0];
         dialogueBox.SetActive(true);
         justStarted = true;
+        PlayerController.instance.canMove = false;
     }
 }
