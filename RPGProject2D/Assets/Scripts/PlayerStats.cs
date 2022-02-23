@@ -13,7 +13,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] int maxHP = 1000;
     [SerializeField] int currentMp;
     [SerializeField] int maxMP = 1000;
-    [SerializeField] int damage;
+    [SerializeField] int strength;
     [SerializeField] int defence;
     [SerializeField] int weaponPwr;
     [SerializeField] int armorPwr;
@@ -37,7 +37,7 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.K))
+        if(Input.GetKey(KeyCode.K))
         {
             AddExp(500);
         }
@@ -46,10 +46,33 @@ public class PlayerStats : MonoBehaviour
     public void AddExp(int expToAdd)
     {
         currentExp += expToAdd;
-        if(currentExp > expToLevelUp[playerLevel])
+        if(playerLevel < maxLevel)
         {
-            currentExp -= expToLevelUp[playerLevel];
-            playerLevel++;
+            if(currentExp >= expToLevelUp[playerLevel])
+            {
+                currentExp -= expToLevelUp[playerLevel];
+                playerLevel++;
+
+                if(playerLevel % 2 == 0)
+                {
+                    strength++;
+                }
+                else
+                {
+                    defence++;
+                }
+
+                maxHP = Mathf.FloorToInt(maxHP * 1.05f);
+                currentHp = maxHP;
+
+                maxMP = Mathf.FloorToInt(maxMP * 1.05f);
+                currentMp = maxMP;
+            }
+        }
+
+        if(playerLevel >= maxLevel)
+        {
+            currentExp = 0;
         }
     }
 }
