@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1066049837268995208}
   - component: {fileID: 1066049837268995214}
   - component: {fileID: 1066049837268995215}
+  - component: {fileID: 4899513464928827254}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -156,3 +157,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaTransitionName: 
   canMove: 1
+--- !u!114 &4899513464928827254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066049837268995204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340512d3c9ebeb64098a21be22deaeb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLevel: 1
+  currentExp: 0
+  maxLevel: 100
+  expToLevelUp: 
+  baseExp: 1000
+  currentHp: 0
+  maxHP: 1000
+  currentMp: 0
+  maxMP: 1000
+  damage: 0
+  defence: 0
+  weaponPwr: 0
+  armorPwr: 0
+  equippedWeapon: 
+  equippedArmor: 
+  characterImage: {fileID: 0}
