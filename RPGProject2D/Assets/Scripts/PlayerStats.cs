@@ -3,23 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
-{   
-    [SerializeField] int playerLevel = 1;
-    [SerializeField] int currentExp;
-    [SerializeField] int maxLevel = 100;
-    [SerializeField] int[] expToLevelUp;
-    [SerializeField] int baseExp = 1000;
-    [SerializeField] int currentHp;
-    [SerializeField] int maxHP = 1000;
-    [SerializeField] int currentMp;
-    [SerializeField] int maxMP = 1000;
+{
+    public string playerName;   
+    public int playerLevel = 1;
+    public int currentExp;
+    public int maxLevel = 100;
+    public int[] expToLevelUp;
+    public int baseExp = 1000;
+    public int currentHp;
+    public int maxHP = 1000;
+    public int currentMp;
+    public int maxMP = 1000;
     [SerializeField] int strength;
     [SerializeField] int defence;
     [SerializeField] int weaponPwr;
     [SerializeField] int armorPwr;
     [SerializeField] string equippedWeapon;
     [SerializeField] string equippedArmor;
-    [SerializeField] Sprite characterImage;
+    public Sprite characterImage;
 
 
     // Start is called before the first frame update
@@ -37,7 +38,7 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.K))
+        if(Input.GetKeyDown(KeyCode.K))
         {
             AddExp(500);
         }

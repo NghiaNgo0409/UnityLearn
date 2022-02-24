@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public bool isLoadingScreen, isDialogueActive, isGameMenuActive;
+    public PlayerStats[] playerStats;
     private void Awake() {
         if(instance == null)
         {
