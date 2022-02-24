@@ -10,6 +10,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Text[] hpText, mpText, levelText, expText, nameText;
     [SerializeField] Slider[] expBar;
     [SerializeField] Image[] charImage;
+    [SerializeField] GameObject[] windows;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +24,7 @@ public class GameMenu : MonoBehaviour
         {
             if(gameMenu.activeInHierarchy)
             {
-                GameManager.instance.isGameMenuActive = false;
-                gameMenu.SetActive(false);
+                CloseMenu();
             }
             else
             {
@@ -38,7 +38,6 @@ public class GameMenu : MonoBehaviour
     public void UpdateMenuStats()
     {
         playerStats = GameManager.instance.playerStats;
-        Debug.Log(playerStats.Length);
 
         for(int i = 0; i < playerStats.Length; i++)
         {
@@ -50,5 +49,31 @@ public class GameMenu : MonoBehaviour
             expBar[i].maxValue = playerStats[i].expToLevelUp[playerStats[i].playerLevel];
             expBar[i].value = playerStats[i].currentExp;
         }
+    }
+
+    public void ToggleWindows(int windowsIndex)
+    {
+        for(int i = 0; i < windows.Length; i++)
+        {
+            if(i == windowsIndex)
+            {
+                windows[i].SetActive(!windows[i].activeInHierarchy);
+            }
+            else
+            {
+                windows[i].SetActive(false);   
+            }
+        }
+    }
+    
+    public void CloseMenu()
+    {
+        for(int i = 0; i < windows.Length; i++)
+        {
+            windows[i].SetActive(false);
+        }
+
+        GameManager.instance.isGameMenuActive = false;
+        gameMenu.SetActive(false);
     }
 }
