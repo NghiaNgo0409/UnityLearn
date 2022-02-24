@@ -12,6 +12,7 @@ public class AreaAnchor : MonoBehaviour
         {
             PlayerController.instance.transform.position = transform.position;
             UIFade.instance.FadeFromBlack();
+            GameManager.instance.isLoadingScreen = false;
         }
     }
 

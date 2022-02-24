@@ -33,6 +33,7 @@ public class AreaExit : MonoBehaviour
         {
             isLoadedScene = true;
             UIFade.instance.FadeToBlack();
+            GameManager.instance.isLoadingScreen = true;
             PlayerController.instance.areaTransitionName = areaTransitionName;
         }
     }

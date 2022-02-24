@@ -41,7 +41,7 @@ public class UIFade : MonoBehaviour
         if(shouldFadeFromBlack)
         {
             fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, Mathf.MoveTowards(fadeImage.color.a, 0f, fadeSpeed * Time.deltaTime));
-            if(fadeImage.color.a == 1f)
+            if(fadeImage.color.a == 0f)
             {
                 shouldFadeFromBlack = false;
             }
