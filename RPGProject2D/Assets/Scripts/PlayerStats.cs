@@ -14,12 +14,12 @@ public class PlayerStats : MonoBehaviour
     public int maxHP = 1000;
     public int currentMp;
     public int maxMP = 1000;
-    [SerializeField] int strength;
-    [SerializeField] int defence;
-    [SerializeField] int weaponPwr;
-    [SerializeField] int armorPwr;
-    [SerializeField] string equippedWeapon;
-    [SerializeField] string equippedArmor;
+    public int strength;
+    public int defence;
+    public int weaponPwr;
+    public int armorPwr;
+    public string equippedWeapon;
+    public string equippedArmor;
     public Sprite characterImage;
 
 

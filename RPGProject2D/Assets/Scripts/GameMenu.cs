@@ -11,6 +11,11 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Slider[] expBar;
     [SerializeField] Image[] charImage;
     [SerializeField] GameObject[] windows;
+
+    [Header("Stats Menu")]
+    [SerializeField] Button[] buttons;
+    [SerializeField] Text charName, hpTextStat, mpTextStat, strText, defText, equipWpn, wpnPower, equipArmor, armorPower, expNext; 
+    [SerializeField] Image charImageStat;
     // Start is called before the first frame update
     void Start()
     {
@@ -75,5 +80,37 @@ public class GameMenu : MonoBehaviour
 
         GameManager.instance.isGameMenuActive = false;
         gameMenu.SetActive(false);
+    }
+
+    public void OpenStatMenu()
+    {
+        UpdateMenuStats();
+
+        ButtonStats(0);
+        
+        for(int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].GetComponentInChildren<Text>().text = playerStats[i].playerName;
+        }
+    }
+
+    public void ButtonStats(int index)
+    {
+        charName.text = playerStats[index].playerName;
+        hpTextStat.text = "HP: " + playerStats[index].currentHp + "/" + playerStats[index].maxHP;
+        mpTextStat.text = "MP: " + playerStats[index].currentMp + "/" + playerStats[index].maxMP;
+        strText.text = "Strength: " + playerStats[index].strength;
+        defText.text = "Defense: " + playerStats[index].defence;
+        if(playerStats[index].equippedWeapon != "")
+        {
+            equipWpn.text = "Equipped Weapon: " + playerStats[index].equippedWeapon;
+        }
+        wpnPower.text = "Weapon Power: " + playerStats[index].weaponPwr;
+        if(playerStats[index].equippedArmor != "")
+        {
+            equipArmor.text = "Equipped Armor: " + playerStats[index].equippedArmor;
+        }
+        armorPower.text = "Armor Power: " + playerStats[index].armorPwr;
+        expNext.text = "Exp to next level: " + (playerStats[index].expToLevelUp[playerStats[index].playerLevel] - playerStats[index].currentExp);
     }
 }
