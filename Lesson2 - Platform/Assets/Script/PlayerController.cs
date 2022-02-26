@@ -28,6 +28,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(playerState == PlayerState.Attack) return;  
+        if(Input.GetButtonDown("Fire1"))
+        {
+            playerState = PlayerState.Attack;
+            playerAnim.SetTrigger("Attack");
+            return;
+        }
         GetInput();
         if(Input.GetAxisRaw("Horizontal") > 0 && !isFacingRight)
         {
@@ -46,11 +53,6 @@ public class PlayerController : MonoBehaviour
                 playerState = PlayerState.Idle;
                 playerAnim.SetTrigger("Idle");
             }
-        }
-        if(Input.GetButtonDown("Fire1"))
-        {
-            playerState = PlayerState.Attack;
-            playerAnim.SetTrigger("Attack");
         }
     }
 

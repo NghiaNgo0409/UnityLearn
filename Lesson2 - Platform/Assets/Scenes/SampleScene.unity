@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa0e55ae49b15154b94d30384ed8bf2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 500
+  speed: 1000
   jumpForce: 500
   groundCheckPos: {fileID: 935279261}
   groundRadius: 0.02
