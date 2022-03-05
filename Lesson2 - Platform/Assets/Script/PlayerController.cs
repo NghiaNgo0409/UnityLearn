@@ -10,11 +10,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpForce;
     [SerializeField] SpriteRenderer playerSprite;
     [SerializeField] PlayerState state;
+    bool isFacingLeft = true;
     
     [Header("Check Ground")]
     [SerializeField] Transform groundCheckPos;
     [SerializeField] float groundRadius;
     [SerializeField] LayerMask groundLayer;
+    [Header("Attack")]
+    [SerializeField] BoxCollider2D hitBox;
     bool onGround;
     // Start is called before the first frame update
     void Start()
@@ -30,7 +33,6 @@ public class PlayerController : MonoBehaviour
         if(state == PlayerState.Attack) return;
         GetInput();
         CheckOnGround();
-        Jump();
     }
 
     private void FixedUpdate() {
@@ -38,17 +40,37 @@ public class PlayerController : MonoBehaviour
 
     void GetInput()
     {
+        if(Input.GetKeyDown(KeyCode.Space) && onGround)
+        {
+            state = PlayerState.Jump;
+            playerAnim.SetTrigger("Jump");
+            playerAnim.SetBool("Run", false);
+            playerRb.AddForce(Vector2.up * jumpForce * Time.deltaTime, ForceMode2D.Impulse);
+            return;
+        }
         if(Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
-            playerSprite.flipX = true;
+            if(isFacingLeft)
+            { 
+                isFacingLeft = !isFacingLeft;
+                Vector3 scale = transform.localScale;
+                scale.x *= -1;
+                transform.localScale = scale;
+            }
             playerAnim.SetBool("Run", true);
             state = PlayerState.Run;
         }
         else if(Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
-            playerSprite.flipX = false;
+            if(!isFacingLeft)
+            {
+                isFacingLeft = !isFacingLeft;
+                Vector3 scale = transform.localScale;
+                scale.x *= -1;
+                transform.localScale = scale;
+            }
             playerAnim.SetBool("Run", true);
             state = PlayerState.Run;
         }
@@ -65,19 +87,6 @@ public class PlayerController : MonoBehaviour
                 playerAnim.SetTrigger("Idle");
                 playerAnim.SetBool("Run", false);
             }
-        }
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            state = PlayerState.Jump;
-            playerAnim.SetTrigger("Jump");
-        }
-    }
-  
-    void Jump()
-    {
-        if(state == PlayerState.Jump && onGround)
-        {
-            playerRb.AddForce(Vector2.up * jumpForce * Time.deltaTime, ForceMode2D.Impulse);
         }
     }
 
