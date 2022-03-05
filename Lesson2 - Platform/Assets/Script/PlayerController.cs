@@ -28,21 +28,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if(state == PlayerState.Attack) return;
-        if(state == PlayerState.Jump)
-        {
-            if(state == PlayerState.Idle)
-            {
-                state = PlayerState.Idle;
-                playerAnim.SetTrigger("Idle");
-            }
-            return;
-        }
         GetInput();
+        CheckOnGround();
+        Jump();
     }
 
     private void FixedUpdate() {
-        CheckOnGround();
-        Jump();
     }
 
     void GetInput()
@@ -66,11 +57,6 @@ public class PlayerController : MonoBehaviour
             state = PlayerState.Attack;
             playerAnim.SetTrigger("Attack");
         }
-        else if(Input.GetKeyDown(KeyCode.Space))
-        {
-            state = PlayerState.Jump;
-            playerAnim.SetTrigger("Jump");
-        }
         else
         {
             if(state != PlayerState.Idle)
@@ -80,13 +66,18 @@ public class PlayerController : MonoBehaviour
                 playerAnim.SetBool("Run", false);
             }
         }
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            state = PlayerState.Jump;
+            playerAnim.SetTrigger("Jump");
+        }
     }
   
     void Jump()
     {
         if(state == PlayerState.Jump && onGround)
         {
-            playerRb.velocity += new Vector2(0f, jumpForce * Time.deltaTime);
+            playerRb.AddForce(Vector2.up * jumpForce * Time.deltaTime, ForceMode2D.Impulse);
         }
     }
 
@@ -100,6 +91,7 @@ public class PlayerController : MonoBehaviour
         {
             onGround = false;
         }
+        playerAnim.SetBool("isGround", onGround);
     }
 
     public enum PlayerState

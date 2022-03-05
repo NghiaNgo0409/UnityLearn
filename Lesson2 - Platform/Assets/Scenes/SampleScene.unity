@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpForce: 500
+  jumpForce: 1500
   playerSprite: {fileID: 339462461}
   state: 0
   groundCheckPos: {fileID: 935279261}
