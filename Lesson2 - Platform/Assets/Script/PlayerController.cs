@@ -72,6 +72,7 @@ public class PlayerController : MonoBehaviour
         {
             state = PlayerState.Attack;
             playerAnim.SetTrigger("Attack");
+            hitBox.enabled = true;
         }
         else
         {
@@ -112,5 +113,6 @@ public class PlayerController : MonoBehaviour
     {
         state = PlayerState.Idle;
         playerAnim.SetTrigger("Idle");
+        hitBox.enabled = false;
     }
 }
