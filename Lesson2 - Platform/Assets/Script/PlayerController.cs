@@ -53,10 +53,7 @@ public class PlayerController : MonoBehaviour
             transform.Translate(Vector2.right * speed * Time.deltaTime);
             if(isFacingLeft)
             { 
-                isFacingLeft = !isFacingLeft;
-                Vector3 scale = transform.localScale;
-                scale.x *= -1;
-                transform.localScale = scale;
+                Flip();
             }
             playerAnim.SetBool("Run", true);
             state = PlayerState.Run;
@@ -66,10 +63,7 @@ public class PlayerController : MonoBehaviour
             transform.Translate(Vector2.left * speed * Time.deltaTime);
             if(!isFacingLeft)
             {
-                isFacingLeft = !isFacingLeft;
-                Vector3 scale = transform.localScale;
-                scale.x *= -1;
-                transform.localScale = scale;
+                Flip();
             }
             playerAnim.SetBool("Run", true);
             state = PlayerState.Run;
@@ -89,7 +83,13 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
+    void Flip()
+    {
+        isFacingLeft = !isFacingLeft;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
     void CheckOnGround()
     {
         if(Physics2D.OverlapCircleAll(groundCheckPos.position, groundRadius, groundLayer).Length > 0)
