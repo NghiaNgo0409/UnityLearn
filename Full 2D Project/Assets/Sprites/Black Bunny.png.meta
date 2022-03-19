@@ -1,0 +1,1176 @@
+fileFormatVersion: 2
+guid: 377dd202105718046b4d6e54dcfb79f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7145202511700480411
+    second: Bunny_Idle_0
+  - first:
+      213: -4923052019451976360
+    second: Bunny_Idle_1
+  - first:
+      213: -4883129311298286338
+    second: Bunny_Idle_2
+  - first:
+      213: -5904651945413237681
+    second: PC Computer - MapleStory - Black Bunny_3
+  - first:
+      213: -7043712675998672479
+    second: PC Computer - MapleStory - Black Bunny_4
+  - first:
+      213: -3079366709791364883
+    second: PC Computer - MapleStory - Black Bunny_5
+  - first:
+      213: 5519140545365032689
+    second: PC Computer - MapleStory - Black Bunny_6
+  - first:
+      213: 7619969092654793997
+    second: PC Computer - MapleStory - Black Bunny_7
+  - first:
+      213: -5143732898382563579
+    second: PC Computer - MapleStory - Black Bunny_8
+  - first:
+      213: 2473928760253753770
+    second: PC Computer - MapleStory - Black Bunny_9
+  - first:
+      213: -5856160536883160954
+    second: PC Computer - MapleStory - Black Bunny_10
+  - first:
+      213: 4066052765960471208
+    second: PC Computer - MapleStory - Black Bunny_11
+  - first:
+      213: -1602706124161537577
+    second: PC Computer - MapleStory - Black Bunny_12
+  - first:
+      213: 7818734138048518781
+    second: PC Computer - MapleStory - Black Bunny_13
+  - first:
+      213: 462162931776549809
+    second: PC Computer - MapleStory - Black Bunny_14
+  - first:
+      213: -4336776222483033285
+    second: PC Computer - MapleStory - Black Bunny_15
+  - first:
+      213: -6171034707970454688
+    second: Bunny_Run_0
+  - first:
+      213: -7454620502112427510
+    second: Bunny_Run_1
+  - first:
+      213: 4765525751819440333
+    second: Bunny_Run_2
+  - first:
+      213: -1878281216343528747
+    second: Bunny_Run_3
+  - first:
+      213: 6089178897018098140
+    second: PC Computer - MapleStory - Black Bunny_20
+  - first:
+      213: -7732095460282246206
+    second: PC Computer - MapleStory - Black Bunny_21
+  - first:
+      213: -852040836481720247
+    second: PC Computer - MapleStory - Black Bunny_22
+  - first:
+      213: -1258861128384205458
+    second: PC Computer - MapleStory - Black Bunny_23
+  - first:
+      213: -4233223653703454082
+    second: PC Computer - MapleStory - Black Bunny_24
+  - first:
+      213: 3937856176696398009
+    second: PC Computer - MapleStory - Black Bunny_25
+  - first:
+      213: 8009198096162070153
+    second: PC Computer - MapleStory - Black Bunny_26
+  - first:
+      213: 6099718694701487417
+    second: PC Computer - MapleStory - Black Bunny_27
+  - first:
+      213: 6906700537727559936
+    second: PC Computer - MapleStory - Black Bunny_28
+  - first:
+      213: 4364851963115403627
+    second: PC Computer - MapleStory - Black Bunny_29
+  - first:
+      213: -3078238128160243847
+    second: PC Computer - MapleStory - Black Bunny_30
+  - first:
+      213: 1981305407299864735
+    second: Bunny_Hurt_01
+  - first:
+      213: 2044645178202648861
+    second: PC Computer - MapleStory - Black Bunny_32
+  - first:
+      213: -2229347431789819806
+    second: PC Computer - MapleStory - Black Bunny_33
+  - first:
+      213: -419024899316880773
+    second: PC Computer - MapleStory - Black Bunny_34
+  - first:
+      213: 3919823452760392567
+    second: PC Computer - MapleStory - Black Bunny_35
+  - first:
+      213: -7982133695101985751
+    second: PC Computer - MapleStory - Black Bunny_36
+  - first:
+      213: 1417551594903775782
+    second: PC Computer - MapleStory - Black Bunny_37
+  - first:
+      213: -6133654351460716035
+    second: PC Computer - MapleStory - Black Bunny_38
+  - first:
+      213: 2013044912567421206
+    second: PC Computer - MapleStory - Black Bunny_39
+  - first:
+      213: 8886200220214089814
+    second: PC Computer - MapleStory - Black Bunny_40
+  - first:
+      213: 2819786469230920164
+    second: PC Computer - MapleStory - Black Bunny_41
+  - first:
+      213: -5420767433520102000
+    second: PC Computer - MapleStory - Black Bunny_42
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bunny_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1009
+        width: 40
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e2dd92c2427dc90800000000000000
+      internalID: -7145202511700480411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1009
+        width: 40
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855abc1954ecdabb0800000000000000
+      internalID: -4923052019451976360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1009
+        width: 40
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc84c763c3ab3cb0800000000000000
+      internalID: -4883129311298286338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_3
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 961
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44235ff6567e0ea0800000000000000
+      internalID: -5904651945413237681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 961
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9de2fe3a4bf3e90800000000000000
+      internalID: -7043712675998672479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_5
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 961
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8e8b9ea44e345d0800000000000000
+      internalID: -3079366709791364883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 905
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe30f7951de79c40800000000000000
+      internalID: 5519140545365032689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_7
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 857
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05052774819fb960800000000000000
+      internalID: 7619969092654793997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_8
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 857
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507ba6c7e2acd98b0800000000000000
+      internalID: -5143732898382563579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 857
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa92c8a9919255220800000000000000
+      internalID: 2473928760253753770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 809
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6881b6bd40dbabea0800000000000000
+      internalID: -5856160536883160954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 809
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a28111a2758d6830800000000000000
+      internalID: 4066052765960471208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_12
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 809
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d92206854b02c9e0800000000000000
+      internalID: -1602706124161537577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 761
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a1a9be549b18c60800000000000000
+      internalID: 7818734138048518781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 761
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3f4e0ecbee96600800000000000000
+      internalID: 462162931776549809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_15
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 761
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33d98cb00da0d3c0800000000000000
+      internalID: -4336776222483033285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny_Run_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 714
+        width: 40
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b80dee0a41c5aa0800000000000000
+      internalID: -6171034707970454688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny_Run_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 713
+        width: 40
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02ae3c462edb8890800000000000000
+      internalID: -7454620502112427510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny_Run_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 713
+        width: 40
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc09c252c6c822240800000000000000
+      internalID: 4765525751819440333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny_Run_3
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 713
+        width: 45
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da2e8f6f210fe5e0800000000000000
+      internalID: -1878281216343528747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_20
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 665
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1919ae1fb118450800000000000000
+      internalID: 6089178897018098140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_21
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 617
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb5770352412b490800000000000000
+      internalID: -7732095460282246206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 561
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940616f9f51fc24f0800000000000000
+      internalID: -852040836481720247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_23
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 504
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dac153970a78ee0800000000000000
+      internalID: -1258861128384205458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_24
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 452
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72793af3819045c0800000000000000
+      internalID: -4233223653703454082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_25
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 452
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0119c345316a630800000000000000
+      internalID: 3937856176696398009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_26
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 403
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e9971eb33662f60800000000000000
+      internalID: 8009198096162070153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 403
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935dd7bc5dd86a450800000000000000
+      internalID: 6099718694701487417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_28
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 353
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0092049bb8789df50800000000000000
+      internalID: 6906700537727559936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_29
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 353
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69f8a60cb1139c30800000000000000
+      internalID: 4364851963115403627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_30
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 353
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ff1fc4bb6e745d0800000000000000
+      internalID: -3078238128160243847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny_Hurt_01
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 306
+        width: 40
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f984ba145c20f7b10800000000000000
+      internalID: 1981305407299864735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_32
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 250
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11fb72e4f9006c10800000000000000
+      internalID: 2044645178202648861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_33
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 250
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2680d378254cf01e0800000000000000
+      internalID: -2229347431789819806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_34
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 247
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a6c2cf2135f2af0800000000000000
+      internalID: -419024899316880773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_35
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 191
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773470489a2066630800000000000000
+      internalID: 3919823452760392567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_36
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 190
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c15c902b3c93190800000000000000
+      internalID: -7982133695101985751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_37
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 138
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a27014aa72ca310800000000000000
+      internalID: 1417551594903775782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_38
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 138
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1b7266dd1e0eaa0800000000000000
+      internalID: -6133654351460716035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_39
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 88
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6190d72bea5cfeb10800000000000000
+      internalID: 2013044912567421206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_40
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 91
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658dbd8e400225b70800000000000000
+      internalID: 8886200220214089814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_41
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 91
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e146f89ad4e12720800000000000000
+      internalID: 2819786469230920164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Bunny_42
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 90
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095470b5db095c4b0800000000000000
+      internalID: -5420767433520102000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
