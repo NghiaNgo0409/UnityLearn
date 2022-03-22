@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour, ITakeDamageable
     [SerializeField] float _knockbackForce;
 
     [SerializeField] int _hp;
-    private int AttackCombo;
+
     public float _speed;
 
     [SerializeField] private bool _isOnGround;
@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour, ITakeDamageable
     [SerializeField] float _lockDamgTime = 1f;
     private float _damgTime;
     private bool _isLockDamg;
+
+    private int _animCombo = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -173,13 +175,23 @@ public class PlayerController : MonoBehaviour, ITakeDamageable
         _anim.SetBool("isGround", _isOnGround);
     }
 
+    // OnTriggerEnter2D is called when the Collider2D other enters the trigger (2D physics only)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("WinObj"))
+        {
+            Debug.Log("Win");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        }
+    }
+
     public void OnAttack_01_End(int value)
     {
         //Debug.Log("OnAttack_01_End");
         _state = PlayerState.Idle;
         _anim.SetTrigger("idle");
-        AttackCombo = value;
-        _anim.SetInteger("AttackCombo", AttackCombo);
+        _animCombo = value;
+        _anim.SetInteger("AttackCombo", _animCombo);
     }
 
     public void OnAttack_01()
