@@ -8,7 +8,15 @@ public class PlayerController : MonoBehaviour
 
     float horizontalInput;
 
+    [SerializeField] Transform groundCheckPos;
+
     [SerializeField] float moveSpeed;
+    [SerializeField] float jumpForce;
+    [SerializeField] float groundCheckRadius;
+    
+    bool isOnGround;
+
+    [SerializeField] LayerMask groundLayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,17 +31,48 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate() 
     {
+        CheckCollision();
         Move();    
     }
 
     void GetInput()
     {
+        //Move
         horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        //Jump
+        if(Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        {
+            Jump();
+        }
     }
 
     void Move()
     {
         float moveValue = horizontalInput * moveSpeed * Time.fixedDeltaTime;
         playerRb.velocity = new Vector2(moveValue, playerRb.velocity.y);
+    }
+
+    void Jump()
+    {
+        playerRb.velocity = Vector2.up * jumpForce;
+    }
+
+    void CheckCollision()
+    {
+        var hitGround = Physics2D.OverlapCircle(groundCheckPos.position, groundCheckRadius, groundLayer);
+
+        if(hitGround)
+        {
+            isOnGround = true;
+        }
+        else
+        {
+            isOnGround = false;
+        }
+    }
+    
+    private void OnDrawGizmos() {
+        Gizmos.DrawWireSphere(groundCheckPos.position, groundCheckRadius);
     }
 }
