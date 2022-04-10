@@ -95,12 +95,16 @@ public class PlayerController : MonoBehaviour
 
     void CheckCollision()
     {
+        bool wasGrounded = isOnGround;
         var hitGround = Physics2D.OverlapCircle(groundCheckPos.position, groundCheckRadius, groundLayer);
 
         if(hitGround)
         {
             isOnGround = true;
-            availableJumps = totalJumps;
+            if(!wasGrounded)
+            {
+                availableJumps = totalJumps;
+            }
         }
         else
         {
