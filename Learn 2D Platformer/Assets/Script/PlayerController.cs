@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float groundCheckRadius;
     
     bool isOnGround;
+    bool isFacingRight = true;
 
     [SerializeField] LayerMask groundLayer;
     // Start is called before the first frame update
@@ -39,6 +40,14 @@ public class PlayerController : MonoBehaviour
     {
         //Move
         horizontalInput = Input.GetAxisRaw("Horizontal");
+        if(horizontalInput > 0 && !isFacingRight)
+        {
+            Flip();
+        }
+        else if(horizontalInput < 0 && isFacingRight)
+        {
+            Flip();
+        }
 
         //Jump
         if(Input.GetKeyDown(KeyCode.Space) && isOnGround)
@@ -56,6 +65,12 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         playerRb.velocity = Vector2.up * jumpForce;
+    }
+
+    void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        transform.Rotate(0, 180f, 0);
     }
 
     void CheckCollision()
