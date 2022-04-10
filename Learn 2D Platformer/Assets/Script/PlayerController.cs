@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     
     bool isOnGround;
     bool isFacingRight = true;
+    bool isCoyoteJump;
+    bool isMultipleJump;
 
     [SerializeField] LayerMask groundLayer;
     // Start is called before the first frame update
@@ -74,17 +76,29 @@ public class PlayerController : MonoBehaviour
     {
         if(isOnGround)
         {
+            isMultipleJump = true;
             availableJumps--;
             playerRb.velocity = Vector2.up * jumpForce;
         }
         else
         {
-            if(availableJumps > 0)
+            if(isCoyoteJump)
+            {
+                playerRb.velocity = Vector2.up * jumpForce;
+            }
+            if(isMultipleJump && availableJumps > 0)
             {
                 availableJumps--;
                 playerRb.velocity = Vector2.up * jumpForce;
             }
         }
+    }
+
+    IEnumerator CoyoteJump()
+    {
+        isCoyoteJump = true;
+        yield return new WaitForSeconds(0.2f);
+        isCoyoteJump = false;
     }
 
     void Flip()
@@ -104,11 +118,16 @@ public class PlayerController : MonoBehaviour
             if(!wasGrounded)
             {
                 availableJumps = totalJumps;
+                isMultipleJump = false;
             }
         }
         else
         {
             isOnGround = false;
+            if(wasGrounded)
+            {
+                StartCoroutine(CoyoteJump());
+            }
         }
     }
 
