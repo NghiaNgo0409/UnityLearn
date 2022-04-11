@@ -2131,7 +2131,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &1858568223
 Animator:
   serializedVersion: 3
@@ -2163,6 +2163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf07ddb68026c141b946351aaa06723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 300
 --- !u!1 &2128787052
 GameObject:
   m_ObjectHideFlags: 0
