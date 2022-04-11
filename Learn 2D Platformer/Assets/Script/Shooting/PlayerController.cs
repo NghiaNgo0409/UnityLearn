@@ -12,6 +12,8 @@ namespace Shooting
         float horizontalInput;
 
         [SerializeField] float moveSpeed;
+
+        bool isFacingRight = true;
         // Start is called before the first frame update
         void Start()
         {
@@ -34,12 +36,26 @@ namespace Shooting
         void GetInput()
         {
             horizontalInput = Input.GetAxisRaw("Horizontal");
+            if(horizontalInput > 0 && !isFacingRight)
+            {
+                Flip();
+            }
+            else if(horizontalInput < 0 && isFacingRight)
+            {
+                Flip();
+            }
         }
 
         void Move()
         {
             float moveValue = horizontalInput * moveSpeed * Time.fixedDeltaTime;
             playerRb.velocity = new Vector2(moveValue, playerRb.velocity.y);
+        }
+
+        void Flip()
+        {
+            isFacingRight = !isFacingRight;
+            transform.Rotate(0, 180, 0);
         }
 
         void UpdateAnimation()
