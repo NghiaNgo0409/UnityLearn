@@ -11,7 +11,10 @@ namespace Shooting
         
         float horizontalInput;
 
+        [SerializeField] GameObject bulletPrefabs;
+
         [SerializeField] Transform groundCheckPos;
+        [SerializeField] Transform firePos;
 
         [SerializeField] float moveSpeed;
         [SerializeField] float jumpForce;
@@ -59,6 +62,12 @@ namespace Shooting
             {
                 Jump();
             }
+
+            //Shoot
+            if(Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+            }
         }
 
         void Move()
@@ -80,6 +89,12 @@ namespace Shooting
         {
             isFacingRight = !isFacingRight;
             transform.Rotate(0, 180, 0);
+        }
+
+        void Shoot()
+        {
+            Instantiate(bulletPrefabs, firePos.position, transform.rotation);
+            playerAnim.SetTrigger("Shooting");
         }
 
         void CheckOnGround()
