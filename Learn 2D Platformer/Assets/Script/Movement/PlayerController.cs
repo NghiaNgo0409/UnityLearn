@@ -184,7 +184,6 @@ namespace Movement
             
             if(hitWall && Mathf.Abs(horizontalInput) > 0 &&!isOnGround && playerRb.velocity.y < 0)
             {
-                isTouchingWall = true;
                 if(!isSliding)
                 {
                     availableJumps = totalJumps;
@@ -201,7 +200,6 @@ namespace Movement
             }
             else
             {
-                isTouchingWall = false;
                 isSliding = false;
             }
         }
