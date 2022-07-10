@@ -73,7 +73,7 @@ namespace Inventory.Logic
             tooltip.gameObject.SetActive(false);
         }
 
-        public void OnSubmit()
+        public void OnPointerDown()
         {
             Debug.Log("Use this one");
         }
